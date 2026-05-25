@@ -1,0 +1,46 @@
+[
+  {
+    "best_max_x": 397.1151,
+    "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+    "confidence_ranking": 98.7166,
+    "median_confidence": 1.0,
+    "median_max_x": 4.399,
+    "records": 101575,
+    "replayable": 96847,
+    "unique_tokens": 5489,
+    "winrate_at_1_5x": 0.9679144385026738
+  },
+  {
+    "best_max_x": 86.851,
+    "channel_name": "WhaleSignal Meme Coin",
+    "confidence_ranking": 85.0,
+    "median_confidence": 0.88,
+    "median_max_x": 59.6762,
+    "records": 79,
+    "replayable": 35,
+    "unique_tokens": 16,
+    "winrate_at_1_5x": 1.0
+  },
+  {
+    "best_max_x": 332.4984,
+    "channel_name": "WaveX Call - Multichain",
+    "confidence_ranking": 78.0711,
+    "median_confidence": 1.0,
+    "median_max_x": 1.4207,
+    "records": 6237,
+    "replayable": 5456,
+    "unique_tokens": 3437,
+    "winrate_at_1_5x": 0.4517766497461929
+  },
+  {
+    "best_max_x": 500.0,
+    "channel_name": "Twitter @pumpdotfun (alpha)",
+    "confidence_ranking": 63.2,
+    "median_confidence": 0.1,
+    "median_max_x": 500.0,
+    "records": 51,
+    "replayable": 47,
+    "unique_tokens": 10,
+    "winrate_at_1_5x": 1.0
+  }
+]

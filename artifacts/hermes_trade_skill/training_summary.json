@@ -1,0 +1,112 @@
+{
+  "best_channel_mix": [
+    "GMGN Featured Signals(Lv1) - SOL",
+    "WaveX Call - Multichain"
+  ],
+  "best_summary": {
+    "expectancy": 0.624154,
+    "max_drawdown": 0.0,
+    "profit_factor": Infinity,
+    "total_pnl": 156.03851,
+    "trades": 250,
+    "winrate": 1.0
+  },
+  "minimum_trade_count_target": 25,
+  "paper_context": {
+    "gate_counts": {
+      "APPROVE_FOR_PAPER": 250,
+      "BLOCK_FOR_RISK": 101136,
+      "NEEDS_MORE_DATA": 4173,
+      "WATCH_ONLY": 2383
+    },
+    "overall": {
+      "avg_pnl_x": 2.185746,
+      "exit_reasons": {
+        "max_hold": 93259,
+        "stop_loss": 531,
+        "take_profit": 8581
+      },
+      "expectancy_units": 1.185746,
+      "max_drawdown_units": -208.49425,
+      "profit_factor": 8.43387,
+      "total_pnl_units": 121385.96405,
+      "trades": 102371,
+      "winrate": 0.114388
+    },
+    "strategy_ranking": [
+      {
+        "avg_pnl_x": 2.196718,
+        "exit_reasons": {
+          "max_hold": 90554,
+          "stop_loss": 531,
+          "take_profit": 8581
+        },
+        "expectancy_units": 1.196718,
+        "max_drawdown_units": -239.22185,
+        "profile": "balanced",
+        "profit_factor": 7.59718,
+        "total_pnl_units": 119272.10335,
+        "trades": 99666,
+        "winrate": 0.095007
+      },
+      {
+        "avg_pnl_x": 1.870926,
+        "exit_reasons": {
+          "max_hold": 855,
+          "stop_loss": 100026,
+          "take_profit": 1118
+        },
+        "expectancy_units": 0.696741,
+        "max_drawdown_units": -927.67548,
+        "profile": "fast_exit",
+        "profit_factor": 5.523937,
+        "total_pnl_units": 71066.88556,
+        "trades": 101999,
+        "winrate": 0.013598
+      },
+      {
+        "avg_pnl_x": 2.148696,
+        "exit_reasons": {
+          "max_hold": 100284,
+          "stop_loss": 557,
+          "take_profit": 911
+        },
+        "expectancy_units": 0.689218,
+        "max_drawdown_units": -151.13691,
+        "profile": "graduation_watch",
+        "profit_factor": 7.160696,
+        "total_pnl_units": 70129.29951,
+        "trades": 101752,
+        "winrate": 0.113157
+      },
+      {
+        "avg_pnl_x": 1.545577,
+        "exit_reasons": {
+          "max_hold": 7914
+        },
+        "expectancy_units": 0.409182,
+        "max_drawdown_units": -0.1725,
+        "profile": "sniper",
+        "profit_factor": 3755.515826,
+        "total_pnl_units": 3238.2699,
+        "trades": 7914,
+        "winrate": 0.999368
+      },
+      {
+        "avg_pnl_x": 0.81,
+        "exit_reasons": {
+          "stop_loss": 7896
+        },
+        "expectancy_units": -0.095,
+        "max_drawdown_units": -750.12,
+        "profile": "conservative",
+        "profit_factor": 0.0,
+        "total_pnl_units": -750.12,
+        "trades": 7896,
+        "winrate": 0.0
+      }
+    ]
+  },
+  "target_reached": true,
+  "target_winrate": 0.8
+}

@@ -1,0 +1,11 @@
+{
+  "reasons": [
+    "config_invalid",
+    "live_trading_disabled",
+    "missing_source",
+    "missing_wallet",
+    "oos_failed",
+    "transaction_send_disabled"
+  ],
+  "status": "BLOCK_REAL_TRADING"
+}

@@ -1,0 +1,10 @@
+{
+  "config_errors": [
+    "ENABLE_LIVE_TRADING is false"
+  ],
+  "missing": [
+    "HELIUS_API_KEY",
+    "HELIUS_RPC_URL",
+    "JUPITER_API_BASE"
+  ]
+}

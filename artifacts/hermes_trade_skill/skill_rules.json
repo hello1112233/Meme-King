@@ -1,0 +1,26 @@
+{
+  "entry_rule": {
+    "allowed_channels": [
+      "GMGN Featured Signals(Lv1) - SOL",
+      "WaveX Call - Multichain"
+    ],
+    "cooldown_seconds": 0,
+    "duplicate_window_seconds": 0,
+    "max_signal_age": 3600,
+    "min_channel_trades": 25,
+    "min_channel_winrate": 0.0,
+    "min_confidence": 0.0,
+    "strategy_profile": "balanced"
+  },
+  "exit_rule": {
+    "max_hold_seconds": 7200,
+    "stop_loss_pct": 0.3,
+    "stop_loss_x": 0.7,
+    "take_profit_pct": 0.5,
+    "take_profit_x": 1.5
+  },
+  "target": {
+    "minimum_trades": 25,
+    "winrate": 0.8
+  }
+}

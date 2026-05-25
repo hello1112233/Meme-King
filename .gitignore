@@ -1,0 +1,43 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets and environments
+.env
+*.session
+*.session-journal
+*.key
+wallet*.json
+*wallet*.json
+
+# OS
+.DS_Store
+
+# Node
+node_modules/
+
+# SQLite WAL/SHM
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+
+# Live runtime state (rebuilds locally)
+artifacts/live_paper/live_state.db
+
+# Large generated artifacts (keep summaries, exclude bulk JSONL/HTML)
+artifacts/**/*.jsonl
+artifacts/**/*.html
+artifacts/export_manifest.json
+artifacts/runtime_architecture/
+
+# Data exports (large raw archives)
+data/source_exports/*
+!data/source_exports/.gitkeep
+
+# Build artifacts
+meme_king.egg-info/
+dist/
+build/

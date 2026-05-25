@@ -1,0 +1,12 @@
+{
+  "halted": true,
+  "reasons": [
+    "config_invalid",
+    "live_trading_disabled",
+    "missing_source",
+    "missing_wallet",
+    "oos_failed",
+    "transaction_send_disabled"
+  ],
+  "updated_at": "2026-05-25T23:06:32Z"
+}

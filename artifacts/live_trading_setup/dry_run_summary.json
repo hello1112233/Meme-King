@@ -1,0 +1,12 @@
+{
+  "artifacts_dir": "artifacts/live_trading_setup",
+  "live_trading": false,
+  "mode": "dry_run_only",
+  "quotes_planned": 250,
+  "rpc_broadcast": false,
+  "simulations_run": 0,
+  "timestamp_utc": "2026-05-25T23:06:32Z",
+  "transaction_send": false,
+  "transactions_planned": 250,
+  "wallets": false
+}

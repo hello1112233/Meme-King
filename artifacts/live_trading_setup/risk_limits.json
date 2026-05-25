@@ -1,0 +1,9 @@
+{
+  "default_slippage_bps": 1500,
+  "jito_tip_lamports": 0,
+  "max_daily_loss_sol": 0.05,
+  "max_open_positions": 1,
+  "max_position_sol": 0.01,
+  "max_slippage_bps": 3000,
+  "priority_fee_microlamports": 50000
+}

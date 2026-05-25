@@ -1,0 +1,46 @@
+{
+  "purpose": "Read-only allowlist for Meme King historical replay. All other channels are rejected.",
+  "channels": [
+    {
+      "aliases": [
+        "WhaleSignal Meme Coin",
+        "WhaleSignal",
+        "Whale Signal Meme Coin",
+        "whalesignal"
+      ],
+      "canonical_name": "WhaleSignal Meme Coin",
+      "channel_id": null
+    },
+    {
+      "aliases": [
+        "WaveX Call - Multichain [T:25176]",
+        "WaveX Call - Multichain",
+        "WaveX",
+        "wavex"
+      ],
+      "canonical_name": "WaveX Call - Multichain",
+      "channel_id": "T:25176"
+    },
+    {
+      "aliases": [
+        "Twitter @pumpdotfun (α)",
+        "Twitter @pumpdotfun (alpha)",
+        "@pumpdotfun",
+        "pumpdotfun"
+      ],
+      "canonical_name": "Twitter @pumpdotfun (alpha)",
+      "channel_id": null
+    },
+    {
+      "aliases": [
+        "GMGN Featured Signals(Lv1) - SOL [T:3847543]",
+        "GMGN Featured Signals(Lv1) - SOL",
+        "GMGN Lv1 SOL",
+        "GMGN Featured Signals Lv1 SOL"
+      ],
+      "canonical_name": "GMGN Featured Signals(Lv1) - SOL",
+      "channel_id": "T:3847543"
+    }
+  ]
+}
+

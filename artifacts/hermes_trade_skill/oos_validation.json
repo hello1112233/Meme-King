@@ -1,0 +1,56 @@
+{
+  "oos_pass": false,
+  "ready_for_micro_live": false,
+  "results": {
+    "accepted_setups": {
+      "passed": true,
+      "value": 250
+    },
+    "channel_concentration": {
+      "channel_counts": {
+        "GMGN Featured Signals(Lv1) - SOL": 20,
+        "WaveX Call - Multichain": 230
+      },
+      "largest_channel": "WaveX Call - Multichain",
+      "largest_share": 0.92,
+      "passed": true
+    },
+    "day_coverage": {
+      "day_coverage": 1,
+      "passed": false
+    },
+    "duplicate_collapse": {
+      "collapsed_count": 234,
+      "collapsed_winrate": 1.0,
+      "original_count": 250,
+      "passed": true
+    },
+    "shuffled_replay": {
+      "count_match": true,
+      "original_count": 250,
+      "original_winrate": 1.0,
+      "passed": true,
+      "replay_count": 250,
+      "replay_winrate": 1.0
+    },
+    "time_split": {
+      "passed": true,
+      "test_count": 75,
+      "test_winrate": 1.0,
+      "train_count": 175
+    },
+    "unique_tokens": {
+      "passed": true,
+      "value": 234
+    }
+  },
+  "thresholds": {
+    "accepted_setups": 100,
+    "channel_concentration": 0.95,
+    "day_coverage": 7,
+    "duplicate_collapse_winrate": 0.8,
+    "time_split_winrate": 0.8,
+    "unique_tokens": 50
+  },
+  "timestamp_utc": "2026-05-25T23:06:31.920390Z"
+}

@@ -1,0 +1,475 @@
+{
+  "channel_approval_rates": {
+    "GMGN Featured Signals(Lv1) - SOL": {
+      "approval_rate": 0.000197,
+      "approved": 20,
+      "blocked": 95060,
+      "needs_more_data": 4112,
+      "total": 101575,
+      "watch_only": 2383
+    },
+    "Twitter @pumpdotfun (alpha)": {
+      "approval_rate": 0.0,
+      "approved": 0,
+      "blocked": 4,
+      "needs_more_data": 47,
+      "total": 51,
+      "watch_only": 0
+    },
+    "WaveX Call - Multichain": {
+      "approval_rate": 0.036877,
+      "approved": 230,
+      "blocked": 5993,
+      "needs_more_data": 14,
+      "total": 6237,
+      "watch_only": 0
+    },
+    "WhaleSignal Meme Coin": {
+      "approval_rate": 0.0,
+      "approved": 0,
+      "blocked": 79,
+      "needs_more_data": 0,
+      "total": 79,
+      "watch_only": 0
+    }
+  },
+  "decision_counts": {
+    "APPROVE_FOR_PAPER": 250,
+    "BLOCK_FOR_RISK": 101136,
+    "NEEDS_MORE_DATA": 4173,
+    "WATCH_ONLY": 2383
+  },
+  "duplicate_cooldown_counts": {
+    "cooldown": 32059,
+    "duplicate": 64
+  },
+  "live_trading": false,
+  "mode": "paper_execution_gate_only",
+  "reason_counts": {
+    "APPROVED_BALANCED_PROFILE": 250,
+    "COOLDOWN_ACTIVE": 32059,
+    "DUPLICATE_SIGNAL": 64,
+    "LOW_CONFIDENCE": 2950,
+    "MAX_OPEN_PAPER_POSITIONS": 95225,
+    "MISSING_CONFIDENCE": 96792,
+    "SUSPICIOUS_TEXT": 18184,
+    "TOKEN_RECURRENCE_HIGH": 45219
+  },
+  "reference_profile": "balanced",
+  "rpc_broadcast": false,
+  "suspicious_signal_examples": [
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": null,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_25603d45d79c75004054e8a0",
+      "mint_address": "35e4ohP3VSyZA8WLmo8wVRkLwjQ3L64XzVL1T6S6hstG",
+      "reasons": [
+        "MISSING_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "7bbedd9c9a3989e62669d686",
+      "token_symbol": "SCAM"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.062,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_4f950bfcae7fa5f59e72119f",
+      "mint_address": "5hK1AWWDgCXy1D8PEWssFWHqtmWG6phxLF5V995CaeBs",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "de03a13c7d8a5a1a36c59577",
+      "token_symbol": "SINBAD"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": null,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_3c2dd32e94ac476b28aa534f",
+      "mint_address": "oCg5huMvb9HCVGtbJcL5aEeQgYwL3pxi5Pa9g6J45Wu",
+      "reasons": [
+        "MISSING_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "d998ef73c7c48da89a918480",
+      "token_symbol": "SCAM"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": null,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_a6ebab9dde7324c28ea6c63e",
+      "mint_address": "6ASbzQfxwS8FENyjChaYsV83y11k8QDdGL4S74viUzsk",
+      "reasons": [
+        "MISSING_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "3b4f788b5b630e0ee4736d04",
+      "token_symbol": "SCAM"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.0,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_90e695c7947c7ba0e0cef865",
+      "mint_address": "2rNehjd9e6WqKNL1rzuXdsihXQpAKtqCHXJfH9STfRXM",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "97195a315793ffbaf20b703e",
+      "token_symbol": "LUCA"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.78,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_f7fa09246a8cbaecca241c85",
+      "mint_address": null,
+      "reasons": [
+        "TOKEN_RECURRENCE_HIGH",
+        "COOLDOWN_ACTIVE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "bdbed99360798ace177d3615",
+      "token_symbol": null
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.0,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_dfb2fb22e967db60f1982678",
+      "mint_address": "4icMLSxGQgmSnQk3DVC8KTKrBLJMVHqLy3M13bxw9uaD",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "80237411d13a5f0c115fd980",
+      "token_symbol": "EMIR"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.444,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_cbfeffc91fdbdbdf6a085cf8",
+      "mint_address": "3bQVweavjDaMW8usRWKj5buvKFe71oTu8NwKNjcFpump",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "003a517a1deb6d28d5153739",
+      "token_symbol": "JOHN"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.2,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_311fd68ac0660890b2a4e9a7",
+      "mint_address": "6AnshyJntQHMXtojVDUaStnvSygSQeHBdjake7hApump",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "b6064dc975fcb6601ea4587d",
+      "token_symbol": "DOGDICK"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": null,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_346a9be2e80bbfa3e9a7f542",
+      "mint_address": "A72ukbeSEQUh9BoBy6SKjbqC32JaAdbg8v4zGU7N7j6h",
+      "reasons": [
+        "MISSING_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "fa7e17e44578935b50640551",
+      "token_symbol": "SCAM"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": null,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_86b64bb005e6da194ff9ba05",
+      "mint_address": null,
+      "reasons": [
+        "MISSING_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "e864dbb793e5c749d93d6497",
+      "token_symbol": "FLOBBY"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.333333,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_15ec5dd447e4c5901884c9f9",
+      "mint_address": null,
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "b9f4cf641de125a33ff1a6ec",
+      "token_symbol": "A2A"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.8,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_c536eaf91a7ca53df8691ce8",
+      "mint_address": null,
+      "reasons": [
+        "TOKEN_RECURRENCE_HIGH",
+        "COOLDOWN_ACTIVE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "783303fa9f842a21aba19eff",
+      "token_symbol": null
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.2,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_742cf48336845e78c777735b",
+      "mint_address": "CjCdKiDaQw67K6cjsLdLdvnSgnU53Vj4L3aFjJcabonk",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "8ae9d2f1de060e0b887d59ac",
+      "token_symbol": "pepeinme"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.2,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_4676ded95005e06fa784851c",
+      "mint_address": "FJWw74hrNkh3QC2L1XpyG4265nv3Kz67PZhxj2Jgvw2g",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "e642689bdef5c4d522eb07bc",
+      "token_symbol": "BOBO"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.0,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_d67291d5dd85a20cdef9d088",
+      "mint_address": "Aukzq79bsgWqtNY3v629PuvjVHNve5CNz2nzVWyFDtFa",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "79dadc865bfd9b5c7121e767",
+      "token_symbol": "FOMO"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.062,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_db7dc7cbf7b38e8d5309ae65",
+      "mint_address": "2MQVDR4Vi5biVqgzhTb1wvhFpMiQHN5SDgPnt5XV4YUe",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "6702e2a900e24185cc869bff",
+      "token_symbol": "FOMO"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": null,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_ac331526752b1b9dbe61d2d9",
+      "mint_address": "AXTsm6pX1r5yXsJVy646nJR2Sn8BoEevuCKupgFby4Dh",
+      "reasons": [
+        "MISSING_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "5bdee9c6e3b7e6f67730630f",
+      "token_symbol": "SCAM"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.0,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_8dd79c51f9777cf83b8c475d",
+      "mint_address": "7fjXdx15RjbQ7uJp9cDkShMUxmRXftPbCN8MutTomR64",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "d35e99845965306074a3f9df",
+      "token_symbol": "Pigeon✨"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": null,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_4db6bbc438dee6b510d8060c",
+      "mint_address": "nxcmfUtgWNhW9FSLio3Q2JisbE2UoJo5ycNM39a5WvB",
+      "reasons": [
+        "MISSING_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "ee3e7497f870e605dd412dab",
+      "token_symbol": "SCAM"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": null,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_9cb98d3fa930238ce260f102",
+      "mint_address": "H4W6zT69X356uofZH16ErosHkjPBKxXpL6mJKjSQacEW",
+      "reasons": [
+        "MISSING_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "a2af667e2e4009d6f52b744d",
+      "token_symbol": "SCAM"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.062,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_ad04328aa396678182f3aeb9",
+      "mint_address": "HYw6NmYcQAwoyvmg4VGHGuRv4PwjzTBzbrKL3wsDE5Tt",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "620d7e1e2f8a7e3710de08a0",
+      "token_symbol": "BASED"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.444,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_bcde276971b12912066bbe2c",
+      "mint_address": "4yarucjEySCmX56nMNuK28TceDHPiXMriS7wfAJcpump",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "066cf62ab722ae7c8fcf5242",
+      "token_symbol": "Roho"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.0,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_930844730d657a72fea32bdb",
+      "mint_address": "2XdniNKJUTTicESjSGEapBEKWZ963KwPaESkMVn9aZLp",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "86a4ab8cc3767e83d63444b0",
+      "token_symbol": "SVE"
+    },
+    {
+      "channel_name": "GMGN Featured Signals(Lv1) - SOL",
+      "confidence": 0.0,
+      "decision": "BLOCK_FOR_RISK",
+      "decision_id": "gate_2d92fc3f4d3ed365c25b964f",
+      "mint_address": "AEEMQaiVQYbq3ybt1S74dkLpY5HZsMJcrDD754sipump",
+      "reasons": [
+        "LOW_CONFIDENCE",
+        "SUSPICIOUS_TEXT"
+      ],
+      "reference_profile": "balanced",
+      "replay_support": 101575,
+      "signal_id": "4d1b2ad99fc6ef281745a1a5",
+      "token_symbol": "PIXELTRUMP"
+    }
+  ],
+  "top_block_reasons": [
+    [
+      "MISSING_CONFIDENCE",
+      96792
+    ],
+    [
+      "MAX_OPEN_PAPER_POSITIONS",
+      95225
+    ],
+    [
+      "TOKEN_RECURRENCE_HIGH",
+      45219
+    ],
+    [
+      "COOLDOWN_ACTIVE",
+      32059
+    ],
+    [
+      "SUSPICIOUS_TEXT",
+      18184
+    ],
+    [
+      "LOW_CONFIDENCE",
+      2950
+    ],
+    [
+      "APPROVED_BALANCED_PROFILE",
+      250
+    ],
+    [
+      "DUPLICATE_SIGNAL",
+      64
+    ]
+  ],
+  "total_decisions": 107942,
+  "wallets": false
+}
