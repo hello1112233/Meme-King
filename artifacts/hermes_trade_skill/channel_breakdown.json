@@ -1,19 +1,19 @@
 {
   "GMGN Featured Signals(Lv1) - SOL": {
-    "avg_pnl_x": 2.21982,
-    "expectancy_units": 1.21982,
+    "avg_pnl_x": 2.218427,
+    "expectancy_units": 1.218427,
     "max_drawdown_units": 0.0,
     "profit_factor": Infinity,
-    "total_pnl_units": 24.3964,
+    "total_pnl_units": 24.36854,
     "trades": 20,
     "winrate": 1.0
   },
   "WaveX Call - Multichain": {
-    "avg_pnl_x": 1.572357,
-    "expectancy_units": 0.572357,
+    "avg_pnl_x": 1.572785,
+    "expectancy_units": 0.572785,
     "max_drawdown_units": 0.0,
     "profit_factor": Infinity,
-    "total_pnl_units": 131.64211,
+    "total_pnl_units": 131.74055,
     "trades": 230,
     "winrate": 1.0
   }

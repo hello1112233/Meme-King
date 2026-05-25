@@ -1,6 +1,6 @@
 {
   "date": "2026-05-25",
-  "gate_decisions_logged": 68,
+  "gate_decisions_logged": 102,
   "ingestors": [
     "StubTelegramIngestor",
     "StubDexScreenerIngestor",
@@ -10,9 +10,9 @@
   ],
   "live_trading": false,
   "mode": "live_paper_collection_only",
-  "paper_positions_logged": 32,
+  "paper_positions_logged": 44,
   "rpc_broadcast": false,
-  "signals_logged": 68,
+  "signals_logged": 102,
   "total_events_processed": 17,
   "wallets": false
 }

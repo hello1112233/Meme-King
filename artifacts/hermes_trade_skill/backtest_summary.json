@@ -1,14 +1,14 @@
 {
-  "avg_pnl_x": 1.624154,
+  "avg_pnl_x": 1.624436,
   "exit_reasons": {
     "EXIT_TAKE_PROFIT": 250
   },
-  "expectancy_units": 0.624154,
+  "expectancy_units": 0.624436,
   "max_drawdown_units": 0.0,
   "profit_factor": Infinity,
   "target_reached": true,
   "target_winrate": 0.8,
-  "total_pnl_units": 156.03851,
+  "total_pnl_units": 156.10909,
   "trades": 250,
   "winrate": 1.0
 }

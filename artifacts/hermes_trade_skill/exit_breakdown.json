@@ -1,9 +1,9 @@
 {
   "EXIT_TAKE_PROFIT": {
-    "expectancy_units": 0.624154,
+    "expectancy_units": 0.624436,
     "profit_factor": Infinity,
     "share": 1.0,
-    "total_pnl_units": 156.03851,
+    "total_pnl_units": 156.10909,
     "trades": 250,
     "winrate": 1.0
   },
