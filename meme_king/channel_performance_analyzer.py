@@ -118,10 +118,14 @@ class ChannelPerformanceAnalyzer:
         market_records: list[dict[str, Any]] | None = None,
         paper_positions: list[dict[str, Any]] | None = None,
         paper_exits: list[dict[str, Any]] | None = None,
+        joined_performances: list[dict[str, Any]] | None = None,
     ) -> None:
         self.selected_channels = selected_channels
         self.market_index = self._build_market_index(market_records or [])
         self.paper_by_signal_id = self._build_paper_index(paper_positions or [], paper_exits or [])
+        self.joined_performance_by_alert = {
+            str(row["alert_key"]): row for row in joined_performances or [] if row.get("alert_key")
+        }
         self.paper_executor = PaperExecutor()
 
     def analyze_alerts(self, alerts: list[dict[str, Any]]) -> list[AlertPerformance]:
@@ -165,6 +169,9 @@ class ChannelPerformanceAnalyzer:
         )
 
     def resolve_price(self, alert: dict[str, Any]) -> PriceResolution:
+        joined = self.joined_performance_by_alert.get(self._alert_identity(alert))
+        if joined:
+            return self._resolve_joined_performance(joined)
         real_points = self._market_points_for_alert(alert)
         if real_points:
             return self._resolve_real_prices(real_points)
@@ -264,6 +271,19 @@ class ChannelPerformanceAnalyzer:
             ],
         }
 
+    def _resolve_joined_performance(self, row: dict[str, Any]) -> PriceResolution:
+        window_prices = {name: self._to_float(row.get(f"max_price_{name}")) for name, _ in HOLD_WINDOWS}
+        return PriceResolution(
+            entry_price=self._to_float(row.get("entry_price")),
+            window_prices=window_prices,
+            max_gain_x=self._to_float(row.get("max_gain_x")),
+            max_gain_pct=self._to_float(row.get("max_gain_pct")),
+            time_to_max_seconds=self._to_int(row.get("time_to_max_seconds")),
+            worst_drawdown_pct=self._to_float(row.get("worst_drawdown_pct")),
+            price_source="historical_market_4ch",
+            source_files=[str(value) for value in row.get("source_files", []) if value],
+        )
+
     def data_quality_report(self, all_alerts: list[dict[str, Any]], performances: list[AlertPerformance]) -> dict[str, Any]:
         selected_alerts = [row for row in all_alerts if row.get("channel_name") in self.selected_channels]
         missing_token = [row for row in selected_alerts if not (row.get("token_symbol") or row.get("mint_address"))]
@@ -283,6 +303,7 @@ class ChannelPerformanceAnalyzer:
             "skipped_missing_token_or_mint": len(missing_token),
             "price_sources": dict(sorted(price_sources.items())),
             "real_market_price_points_indexed": sum(len(points) for points in self.market_index.values()),
+            "joined_historical_market_alerts": price_sources.get("historical_market_4ch", 0),
             "warnings": warnings,
         }
 
@@ -421,6 +442,20 @@ class ChannelPerformanceAnalyzer:
             str(alert.get("token_symbol") or ""),
             str(alert.get("mint_address") or alert.get("message_id") or stable_hash(alert)[:16]),
         )
+
+    @staticmethod
+    def _alert_identity(alert: dict[str, Any]) -> str:
+        return stable_hash(
+            {
+                "channel_name": alert.get("channel_name"),
+                "message_id": alert.get("message_id"),
+                "timestamp": alert.get("timestamp"),
+                "created_at": alert.get("created_at"),
+                "token_symbol": alert.get("token_symbol"),
+                "mint_address": alert.get("mint_address"),
+                "source_file": alert.get("source_file"),
+            }
+        )[:24]
 
     @staticmethod
     def _rate(values: Any) -> float | None:

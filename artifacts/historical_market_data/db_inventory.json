@@ -1,0 +1,7538 @@
+{
+  "databases": [
+    {
+      "error": null,
+      "path": "/Users/macbook/Desktop/meme_king/artifacts/live_paper/live_state.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "token_key",
+              "type": "TEXT"
+            },
+            {
+              "name": "replay_index",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "cooldowns",
+          "row_count": 17
+        },
+        {
+          "columns": [
+            {
+              "name": "signal_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_key",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "signal_id"
+            ],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "open_positions",
+          "row_count": 89
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_index",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "replay_index",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "signal_key",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "signal_key"
+            ],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "seen_signal_keys",
+          "row_count": 89
+        },
+        {
+          "columns": [
+            {
+              "name": "token_key",
+              "type": "TEXT"
+            },
+            {
+              "name": "count",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "token_counts",
+          "row_count": 17
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/agent_training.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "openclaw_alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "timestamp",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_symbol",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "raw_score",
+              "type": "REAL"
+            },
+            {
+              "name": "botty_decision",
+              "type": "TEXT"
+            },
+            {
+              "name": "mc_at_alert",
+              "type": "REAL"
+            },
+            {
+              "name": "price_at_alert",
+              "type": "REAL"
+            },
+            {
+              "name": "liquidity_at_alert",
+              "type": "REAL"
+            },
+            {
+              "name": "convergence_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "peak_multiplier",
+              "type": "REAL"
+            },
+            {
+              "name": "time_to_peak_min",
+              "type": "REAL"
+            },
+            {
+              "name": "final_multiplier",
+              "type": "REAL"
+            },
+            {
+              "name": "outcome_label",
+              "type": "TEXT"
+            },
+            {
+              "name": "max_drawdown_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "data_quality_score",
+              "type": "REAL"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id",
+              "openclaw_alert_id",
+              "mc_at_alert",
+              "price_at_alert",
+              "liquidity_at_alert"
+            ],
+            "channel": [
+              "channel_name",
+              "channel_id"
+            ],
+            "lifecycle": [],
+            "liquidity": [
+              "liquidity_at_alert"
+            ],
+            "market_cap": [
+              "mc_at_alert"
+            ],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [
+              "price_at_alert"
+            ],
+            "signal": [
+              "alert_id",
+              "openclaw_alert_id",
+              "mc_at_alert",
+              "price_at_alert",
+              "liquidity_at_alert"
+            ],
+            "source": [],
+            "timestamp": [
+              "timestamp",
+              "time_to_peak_min",
+              "created_at"
+            ],
+            "token_symbol": [
+              "token_symbol"
+            ],
+            "volume": []
+          },
+          "name": "agent_alerts",
+          "row_count": 458015
+        },
+        {
+          "columns": [
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "total_alerts",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tracked_alerts",
+              "type": "INTEGER"
+            },
+            {
+              "name": "winner_2x_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "winner_10x_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "rug_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "flat_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_peak_multiplier",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_time_to_peak",
+              "type": "REAL"
+            },
+            {
+              "name": "current_wr_2x",
+              "type": "REAL"
+            },
+            {
+              "name": "current_wr_10x",
+              "type": "REAL"
+            },
+            {
+              "name": "current_rug_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "last_updated",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "total_alerts",
+              "tracked_alerts"
+            ],
+            "channel": [
+              "channel_name"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "total_alerts",
+              "tracked_alerts"
+            ],
+            "source": [],
+            "timestamp": [
+              "total_alerts",
+              "tracked_alerts",
+              "avg_time_to_peak"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "agent_channel_stats",
+          "row_count": 288
+        },
+        {
+          "columns": [
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "other_channel",
+              "type": "TEXT"
+            },
+            {
+              "name": "other_alert_time",
+              "type": "INTEGER"
+            },
+            {
+              "name": "time_delta_sec",
+              "type": "INTEGER"
+            },
+            {
+              "name": "other_channel_score",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id",
+              "other_alert_time"
+            ],
+            "channel": [
+              "other_channel",
+              "other_channel_score"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "alert_id",
+              "other_alert_time"
+            ],
+            "source": [],
+            "timestamp": [
+              "other_alert_time",
+              "time_delta_sec"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "agent_convergence",
+          "row_count": 105294
+        },
+        {
+          "columns": [
+            {
+              "name": "decision_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "decision_time",
+              "type": "INTEGER"
+            },
+            {
+              "name": "agent_version",
+              "type": "TEXT"
+            },
+            {
+              "name": "feature_vector",
+              "type": "TEXT"
+            },
+            {
+              "name": "agent_decision",
+              "type": "TEXT"
+            },
+            {
+              "name": "agent_confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "agent_reasoning",
+              "type": "TEXT"
+            },
+            {
+              "name": "actual_outcome",
+              "type": "TEXT"
+            },
+            {
+              "name": "pnl_if_traded",
+              "type": "REAL"
+            },
+            {
+              "name": "decision_correct",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [
+              "decision_time"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "agent_decisions",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "model_version",
+              "type": "TEXT"
+            },
+            {
+              "name": "feature_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "importance_score",
+              "type": "REAL"
+            },
+            {
+              "name": "correlation_outcome",
+              "type": "REAL"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "agent_feature_importance",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "snapshot_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "minutes_from_alert",
+              "type": "INTEGER"
+            },
+            {
+              "name": "price",
+              "type": "REAL"
+            },
+            {
+              "name": "price_change_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "volume_5m",
+              "type": "REAL"
+            },
+            {
+              "name": "volume_cumulative",
+              "type": "REAL"
+            },
+            {
+              "name": "holder_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "holder_change_5m",
+              "type": "INTEGER"
+            },
+            {
+              "name": "holder_growth_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "liquidity_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "liquidity_change_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "lp_burned_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "tx_count_5m",
+              "type": "INTEGER"
+            },
+            {
+              "name": "buy_tx_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "sell_tx_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "buy_sell_ratio",
+              "type": "REAL"
+            },
+            {
+              "name": "unique_traders_5m",
+              "type": "INTEGER"
+            },
+            {
+              "name": "smart_money_inflow",
+              "type": "REAL"
+            },
+            {
+              "name": "smart_money_outflow",
+              "type": "REAL"
+            },
+            {
+              "name": "whale_tx_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "safety_score",
+              "type": "REAL"
+            },
+            {
+              "name": "mint_authority_active",
+              "type": "INTEGER"
+            },
+            {
+              "name": "transfer_hook_detected",
+              "type": "INTEGER"
+            },
+            {
+              "name": "dev_wallet_sold_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "top_1_holder_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "top_10_holder_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "market_cap",
+              "type": "REAL"
+            },
+            {
+              "name": "fdv",
+              "type": "REAL"
+            },
+            {
+              "name": "volume_mcap_ratio",
+              "type": "REAL"
+            },
+            {
+              "name": "social_mentions_5m",
+              "type": "INTEGER"
+            },
+            {
+              "name": "twitter_volume_spike",
+              "type": "REAL"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id",
+              "minutes_from_alert"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [
+              "liquidity_usd",
+              "liquidity_change_pct"
+            ],
+            "market_cap": [
+              "market_cap",
+              "fdv",
+              "volume_mcap_ratio"
+            ],
+            "message": [],
+            "mint": [
+              "mint_authority_active",
+              "market_cap",
+              "volume_mcap_ratio"
+            ],
+            "price": [
+              "price",
+              "price_change_pct"
+            ],
+            "signal": [
+              "alert_id",
+              "minutes_from_alert"
+            ],
+            "source": [
+              "source"
+            ],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": [
+              "volume_5m",
+              "volume_cumulative",
+              "volume_mcap_ratio",
+              "twitter_volume_spike"
+            ]
+          },
+          "name": "agent_snapshots",
+          "row_count": 590543
+        },
+        {
+          "columns": [
+            {
+              "name": "name",
+              "type": ""
+            },
+            {
+              "name": "seq",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "sqlite_sequence",
+          "row_count": 2
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/alpha_hunter_cache.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "username",
+              "type": "TEXT"
+            },
+            {
+              "name": "winners_called",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_time_advantage_min",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_mc_advantage_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "own_win_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "tier",
+              "type": "TEXT"
+            },
+            {
+              "name": "confidence",
+              "type": "TEXT"
+            },
+            {
+              "name": "last_updated",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "avg_mc_advantage_pct"
+            ],
+            "message": [],
+            "mint": [
+              "winners_called"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "avg_time_advantage_min"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "early_callers",
+          "row_count": 75
+        },
+        {
+          "columns": [
+            {
+              "name": "cache_key",
+              "type": "TEXT"
+            },
+            {
+              "name": "data",
+              "type": "TEXT"
+            },
+            {
+              "name": "fetched_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "cache_key"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "tweet_cache",
+          "row_count": 99
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/backfill_checkpoint.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "job_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "provider",
+              "type": "TEXT"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            },
+            {
+              "name": "range_start",
+              "type": "INTEGER"
+            },
+            {
+              "name": "range_end",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_completed_start",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_completed_end",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_completed_timestamp_ms",
+              "type": "INTEGER"
+            },
+            {
+              "name": "chunks_attempted",
+              "type": "INTEGER"
+            },
+            {
+              "name": "chunks_completed",
+              "type": "INTEGER"
+            },
+            {
+              "name": "events_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "events_ingested",
+              "type": "INTEGER"
+            },
+            {
+              "name": "events_skipped",
+              "type": "INTEGER"
+            },
+            {
+              "name": "errors",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "started_at",
+              "type": "REAL"
+            },
+            {
+              "name": "ended_at",
+              "type": "REAL"
+            },
+            {
+              "name": "updated_at",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [
+              "source"
+            ],
+            "timestamp": [
+              "last_completed_timestamp_ms",
+              "events_seen",
+              "events_ingested",
+              "events_skipped"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "backfill_checkpoints",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "chunk_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "job_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "chunk_start",
+              "type": "INTEGER"
+            },
+            {
+              "name": "chunk_end",
+              "type": "INTEGER"
+            },
+            {
+              "name": "events_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "events_ingested",
+              "type": "INTEGER"
+            },
+            {
+              "name": "events_skipped",
+              "type": "INTEGER"
+            },
+            {
+              "name": "errors",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "started_at",
+              "type": "REAL"
+            },
+            {
+              "name": "ended_at",
+              "type": "REAL"
+            },
+            {
+              "name": "updated_at",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "events_seen",
+              "events_ingested",
+              "events_skipped"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "backfill_chunk_log",
+          "row_count": 2
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/chroma/chroma.sqlite3",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "lock_status",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "lock_status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "acquire_write",
+          "row_count": 4467
+        },
+        {
+          "columns": [
+            {
+              "name": "collection_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "key",
+              "type": "TEXT"
+            },
+            {
+              "name": "str_value",
+              "type": "TEXT"
+            },
+            {
+              "name": "int_value",
+              "type": "INTEGER"
+            },
+            {
+              "name": "float_value",
+              "type": "REAL"
+            },
+            {
+              "name": "bool_value",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "collection_metadata",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "dimension",
+              "type": "INTEGER"
+            },
+            {
+              "name": "database_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "config_json_str",
+              "type": "TEXT"
+            },
+            {
+              "name": "schema_str",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "collections",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "tenant_id",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "databases",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "string_value",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embedding_fulltext_search",
+          "row_count": 49782
+        },
+        {
+          "columns": [
+            {
+              "name": "k",
+              "type": ""
+            },
+            {
+              "name": "v",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embedding_fulltext_search_config",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "c0",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embedding_fulltext_search_content",
+          "row_count": 49782
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "block",
+              "type": "BLOB"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embedding_fulltext_search_data",
+          "row_count": 117269
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "sz",
+              "type": "BLOB"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embedding_fulltext_search_docsize",
+          "row_count": 49782
+        },
+        {
+          "columns": [
+            {
+              "name": "segid",
+              "type": ""
+            },
+            {
+              "name": "term",
+              "type": ""
+            },
+            {
+              "name": "pgno",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embedding_fulltext_search_idx",
+          "row_count": 36124
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "key",
+              "type": "TEXT"
+            },
+            {
+              "name": "string_value",
+              "type": "TEXT"
+            },
+            {
+              "name": "int_value",
+              "type": "INTEGER"
+            },
+            {
+              "name": "float_value",
+              "type": "REAL"
+            },
+            {
+              "name": "bool_value",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embedding_metadata",
+          "row_count": 497820
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "key",
+              "type": "TEXT"
+            },
+            {
+              "name": "string_value",
+              "type": "TEXT"
+            },
+            {
+              "name": "int_value",
+              "type": "INTEGER"
+            },
+            {
+              "name": "float_value",
+              "type": "REAL"
+            },
+            {
+              "name": "bool_value",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embedding_metadata_array",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "segment_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "embedding_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "seq_id",
+              "type": "BLOB"
+            },
+            {
+              "name": "created_at",
+              "type": "TIMESTAMP"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embeddings",
+          "row_count": 49782
+        },
+        {
+          "columns": [
+            {
+              "name": "seq_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at",
+              "type": "TIMESTAMP"
+            },
+            {
+              "name": "operation",
+              "type": "INTEGER"
+            },
+            {
+              "name": "topic",
+              "type": "TEXT"
+            },
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "vector",
+              "type": "BLOB"
+            },
+            {
+              "name": "encoding",
+              "type": "TEXT"
+            },
+            {
+              "name": "metadata",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embeddings_queue",
+          "row_count": 699
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "config_json_str",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "embeddings_queue_config",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INT"
+            },
+            {
+              "name": "timestamp",
+              "type": "INT"
+            },
+            {
+              "name": "operation",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "timestamp"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "maintenance_log",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "segment_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "seq_id",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "max_seq_id",
+          "row_count": 2
+        },
+        {
+          "columns": [
+            {
+              "name": "dir",
+              "type": "TEXT"
+            },
+            {
+              "name": "version",
+              "type": "INTEGER"
+            },
+            {
+              "name": "filename",
+              "type": "TEXT"
+            },
+            {
+              "name": "sql",
+              "type": "TEXT"
+            },
+            {
+              "name": "hash",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "migrations",
+          "row_count": 18
+        },
+        {
+          "columns": [
+            {
+              "name": "segment_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "key",
+              "type": "TEXT"
+            },
+            {
+              "name": "str_value",
+              "type": "TEXT"
+            },
+            {
+              "name": "int_value",
+              "type": "INTEGER"
+            },
+            {
+              "name": "float_value",
+              "type": "REAL"
+            },
+            {
+              "name": "bool_value",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "segment_metadata",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            },
+            {
+              "name": "type",
+              "type": "TEXT"
+            },
+            {
+              "name": "scope",
+              "type": "TEXT"
+            },
+            {
+              "name": "collection",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "segments",
+          "row_count": 2
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "tenants",
+          "row_count": 1
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/hermes_research.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "audit_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "total_signals",
+              "type": "INTEGER"
+            },
+            {
+              "name": "buy_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "skip_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_score",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_lgbm",
+              "type": "REAL"
+            },
+            {
+              "name": "shadow_pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "filter_blocks_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "lgbm_buckets_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "notes",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "total_signals"
+            ],
+            "source": [],
+            "timestamp": [
+              "lgbm_buckets_json",
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "audit_results",
+          "row_count": 3
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_ping",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "uptime_s",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "uptime_s"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "bridge_heartbeat",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "skill_run",
+              "type": "TEXT"
+            },
+            {
+              "name": "pattern_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "result_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "recommendation",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "pattern_findings",
+          "row_count": 2
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "action",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_symbol",
+              "type": "TEXT"
+            },
+            {
+              "name": "sol_amount",
+              "type": "REAL"
+            },
+            {
+              "name": "pct_to_sell",
+              "type": "REAL"
+            },
+            {
+              "name": "reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "signal_score",
+              "type": "REAL"
+            },
+            {
+              "name": "lgbm_prob",
+              "type": "REAL"
+            },
+            {
+              "name": "archetype",
+              "type": "TEXT"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "error_msg",
+              "type": "TEXT"
+            },
+            {
+              "name": "filled_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [
+              "signal_score"
+            ],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [
+              "token_symbol"
+            ],
+            "volume": []
+          },
+          "name": "trade_requests",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tweet_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "username",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_symbol",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "tweet_text",
+              "type": "TEXT"
+            },
+            {
+              "name": "likes",
+              "type": "INTEGER"
+            },
+            {
+              "name": "retweets",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at_tw",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [
+              "tweet_text"
+            ],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "retweets",
+              "created_at_tw",
+              "created_at"
+            ],
+            "token_symbol": [
+              "token_symbol"
+            ],
+            "volume": []
+          },
+          "name": "twitter_alpha",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "wallet_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "first_entry_ts",
+              "type": "INTEGER"
+            },
+            {
+              "name": "team_ids",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "first_entry_ts",
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_signals",
+          "row_count": 6
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/immutable_events.db",
+      "tables": [],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/live_runtime_state.db",
+      "tables": [],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/meme_queen_events.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "deterministic_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "event_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "inserted_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "inserted_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "dedup_keys",
+          "row_count": 180
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "event_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "deterministic_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "event_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "event_version",
+              "type": "INTEGER"
+            },
+            {
+              "name": "block_time",
+              "type": "INTEGER"
+            },
+            {
+              "name": "received_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "processed_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "block_slot",
+              "type": "INTEGER"
+            },
+            {
+              "name": "event_seq",
+              "type": "INTEGER"
+            },
+            {
+              "name": "stream_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "correlation_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "causation_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "payload_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "payload_hash",
+              "type": "TEXT"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            },
+            {
+              "name": "source_detail",
+              "type": "TEXT"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "processor_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "metadata_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "tags_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "replay_batch",
+              "type": "TEXT"
+            },
+            {
+              "name": "projection_version",
+              "type": "TEXT"
+            },
+            {
+              "name": "inserted_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "causation_id"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [
+              "source",
+              "source_detail"
+            ],
+            "timestamp": [
+              "block_time",
+              "inserted_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "events",
+          "row_count": 180
+        },
+        {
+          "columns": [
+            {
+              "name": "run_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "started_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "completed_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "events_ingested",
+              "type": "INTEGER"
+            },
+            {
+              "name": "events_deduped",
+              "type": "INTEGER"
+            },
+            {
+              "name": "errors",
+              "type": "INTEGER"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            },
+            {
+              "name": "stream_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "metadata_json",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [
+              "source"
+            ],
+            "timestamp": [
+              "events_ingested",
+              "events_deduped"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "ingestion_runs",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "deterministic_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "raw_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "received_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "stream_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "inserted_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "inserted_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "raw_events",
+          "row_count": 180
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "snapshot_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "snapshot_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "event_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "max_slot",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "snapshots",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "name",
+              "type": ""
+            },
+            {
+              "name": "seq",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "sqlite_sequence",
+          "row_count": 2
+        },
+        {
+          "columns": [
+            {
+              "name": "stream_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "last_seq",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_slot",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "stream_seq",
+          "row_count": 1
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/openclaw.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "label",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tp_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "sl_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "horizon_min",
+              "type": "INTEGER"
+            },
+            {
+              "name": "convergence",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mc_at_alert",
+              "type": "REAL"
+            },
+            {
+              "name": "channel_score",
+              "type": "REAL"
+            },
+            {
+              "name": "archetype",
+              "type": "TEXT"
+            },
+            {
+              "name": "utc_hour",
+              "type": "INTEGER"
+            },
+            {
+              "name": "weekday",
+              "type": "INTEGER"
+            },
+            {
+              "name": "bonding_curve_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "mode",
+              "type": "TEXT"
+            },
+            {
+              "name": "labeled_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id",
+              "mc_at_alert"
+            ],
+            "channel": [
+              "channel_score"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "mc_at_alert"
+            ],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "alert_id",
+              "mc_at_alert"
+            ],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "alert_labels",
+          "row_count": 27298
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "noise_channel",
+              "type": "INTEGER"
+            },
+            {
+              "name": "entry_mc",
+              "type": "REAL"
+            },
+            {
+              "name": "peak_mc",
+              "type": "REAL"
+            },
+            {
+              "name": "current_mc",
+              "type": "REAL"
+            },
+            {
+              "name": "peak_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "current_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "first_alert_time",
+              "type": "INTEGER"
+            },
+            {
+              "name": "check_time",
+              "type": "INTEGER"
+            },
+            {
+              "name": "hours_since_alert",
+              "type": "REAL"
+            },
+            {
+              "name": "hermes_decision",
+              "type": "TEXT"
+            },
+            {
+              "name": "was_skipped",
+              "type": "INTEGER"
+            },
+            {
+              "name": "pumped_15x",
+              "type": "INTEGER"
+            },
+            {
+              "name": "pumped_3x",
+              "type": "INTEGER"
+            },
+            {
+              "name": "pumped_5x",
+              "type": "INTEGER"
+            },
+            {
+              "name": "rugged",
+              "type": "INTEGER"
+            },
+            {
+              "name": "early_caller",
+              "type": "INTEGER"
+            },
+            {
+              "name": "called_before_top_channel",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mins_before_top_channel",
+              "type": "REAL"
+            },
+            {
+              "name": "was_caught_earlier",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "first_alert_time",
+              "hours_since_alert"
+            ],
+            "channel": [
+              "channel_name",
+              "channel_id",
+              "noise_channel",
+              "called_before_top_channel",
+              "mins_before_top_channel"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "entry_mc",
+              "peak_mc",
+              "current_mc"
+            ],
+            "message": [],
+            "mint": [
+              "token_address",
+              "early_caller",
+              "called_before_top_channel",
+              "was_caught_earlier"
+            ],
+            "price": [],
+            "signal": [
+              "first_alert_time",
+              "hours_since_alert"
+            ],
+            "source": [],
+            "timestamp": [
+              "first_alert_time",
+              "check_time"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "alert_retrospective",
+          "row_count": 3451
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "message_raw",
+              "type": "TEXT"
+            },
+            {
+              "name": "mc_at_alert",
+              "type": "REAL"
+            },
+            {
+              "name": "alert_time",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mode",
+              "type": "TEXT"
+            },
+            {
+              "name": "archetype",
+              "type": "TEXT"
+            },
+            {
+              "name": "convergence",
+              "type": "INTEGER"
+            },
+            {
+              "name": "was_first_caller",
+              "type": "INTEGER"
+            },
+            {
+              "name": "paper_only",
+              "type": "INTEGER"
+            },
+            {
+              "name": "smart_pipeline",
+              "type": "INTEGER"
+            },
+            {
+              "name": "outcome_note",
+              "type": "TEXT"
+            },
+            {
+              "name": "mult_peak",
+              "type": "REAL"
+            },
+            {
+              "name": "mult_min",
+              "type": "REAL"
+            },
+            {
+              "name": "time_to_2x_s",
+              "type": "INTEGER"
+            },
+            {
+              "name": "hard_skip",
+              "type": "INTEGER"
+            },
+            {
+              "name": "processed",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "pump_tier",
+              "type": "TEXT"
+            },
+            {
+              "name": "bonding_curve_pct",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "mc_at_alert",
+              "alert_time"
+            ],
+            "channel": [
+              "channel_id",
+              "channel_name"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "mc_at_alert"
+            ],
+            "message": [
+              "message_raw"
+            ],
+            "mint": [
+              "token_address",
+              "was_first_caller"
+            ],
+            "price": [],
+            "signal": [
+              "mc_at_alert",
+              "alert_time"
+            ],
+            "source": [],
+            "timestamp": [
+              "alert_time",
+              "time_to_2x_s",
+              "created_at"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "alerts",
+          "row_count": 37383
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "action",
+              "type": "TEXT"
+            },
+            {
+              "name": "parameter",
+              "type": "TEXT"
+            },
+            {
+              "name": "old_value",
+              "type": "TEXT"
+            },
+            {
+              "name": "new_value",
+              "type": "TEXT"
+            },
+            {
+              "name": "reasoning",
+              "type": "TEXT"
+            },
+            {
+              "name": "regime_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "full_response",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "applied",
+              "type": "INTEGER"
+            },
+            {
+              "name": "applied_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "analyst_suggestions",
+          "row_count": 45
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ts",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [
+              "channel_id"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "ts"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "channel_brags",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "lead_score",
+              "type": "REAL"
+            },
+            {
+              "name": "early_call_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "multi_caller_samples",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [
+              "channel_id"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "early_call_pct",
+              "multi_caller_samples"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "channel_lead_stats",
+          "row_count": 99
+        },
+        {
+          "columns": [
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "median_ttp_s",
+              "type": "REAL"
+            },
+            {
+              "name": "mean_ttp_s",
+              "type": "REAL"
+            },
+            {
+              "name": "p25_s",
+              "type": "REAL"
+            },
+            {
+              "name": "p75_s",
+              "type": "REAL"
+            },
+            {
+              "name": "ttp_regime",
+              "type": "TEXT"
+            },
+            {
+              "name": "sample_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [
+              "channel_id"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "channel_ttp_stats",
+          "row_count": 55
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "mult_mentioned",
+              "type": "REAL"
+            },
+            {
+              "name": "ts",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [
+              "channel_id"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "ts"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "channel_updates",
+          "row_count": 8632
+        },
+        {
+          "columns": [
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "score",
+              "type": "REAL"
+            },
+            {
+              "name": "win_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_mult_peak",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_entry_mc",
+              "type": "REAL"
+            },
+            {
+              "name": "rank",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_alerts",
+              "type": "INTEGER"
+            },
+            {
+              "name": "archetype",
+              "type": "TEXT"
+            },
+            {
+              "name": "cluster_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "features_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "archetype_updated_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "score_24h",
+              "type": "REAL"
+            },
+            {
+              "name": "score_override",
+              "type": "REAL"
+            },
+            {
+              "name": "noise_channel",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "total_alerts"
+            ],
+            "channel": [
+              "channel_id",
+              "channel_name",
+              "channel_type",
+              "noise_channel"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "avg_entry_mc"
+            ],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "total_alerts"
+            ],
+            "source": [],
+            "timestamp": [
+              "total_alerts"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "channels",
+          "row_count": 47
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "verdict",
+              "type": "TEXT"
+            },
+            {
+              "name": "ch_score",
+              "type": "REAL"
+            },
+            {
+              "name": "sm_score",
+              "type": "REAL"
+            },
+            {
+              "name": "mc_score",
+              "type": "REAL"
+            },
+            {
+              "name": "boost_score",
+              "type": "REAL"
+            },
+            {
+              "name": "composite",
+              "type": "REAL"
+            },
+            {
+              "name": "reasoning_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "mc_score"
+            ],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "decisions",
+          "row_count": 4422
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "mc_at_skip",
+              "type": "REAL"
+            },
+            {
+              "name": "skip_time",
+              "type": "INTEGER"
+            },
+            {
+              "name": "composite_score",
+              "type": "REAL"
+            },
+            {
+              "name": "expires_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "second_channel",
+              "type": "TEXT"
+            },
+            {
+              "name": "triggered_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [
+              "channel_name",
+              "second_channel"
+            ],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [
+              "mc_at_skip"
+            ],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "skip_time"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "delayed_watch",
+          "row_count": 974
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "entry_time",
+              "type": "REAL"
+            },
+            {
+              "name": "exit_time",
+              "type": "REAL"
+            },
+            {
+              "name": "exit_reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "exit_signal",
+              "type": "TEXT"
+            },
+            {
+              "name": "mult_at_exit",
+              "type": "REAL"
+            },
+            {
+              "name": "mult_peak_after",
+              "type": "REAL"
+            },
+            {
+              "name": "mult_bottom_after",
+              "type": "REAL"
+            },
+            {
+              "name": "was_good_exit",
+              "type": "INTEGER"
+            },
+            {
+              "name": "was_early_exit",
+              "type": "INTEGER"
+            },
+            {
+              "name": "signal_values_json",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [
+              "exit_signal",
+              "signal_values_json"
+            ],
+            "source": [],
+            "timestamp": [
+              "entry_time",
+              "exit_time"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "exit_outcomes",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_score",
+              "type": "REAL"
+            },
+            {
+              "name": "composite_score",
+              "type": "REAL"
+            },
+            {
+              "name": "mc_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "trend_phase",
+              "type": "TEXT"
+            },
+            {
+              "name": "momentum_5m",
+              "type": "REAL"
+            },
+            {
+              "name": "caller_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "decision",
+              "type": "TEXT"
+            },
+            {
+              "name": "reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "expected_profit_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "actual_profit_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "hermes_route",
+              "type": "TEXT"
+            },
+            {
+              "name": "hermes_reasoning",
+              "type": "TEXT"
+            },
+            {
+              "name": "second_verdict",
+              "type": "TEXT"
+            },
+            {
+              "name": "second_reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "runner_score",
+              "type": "REAL"
+            },
+            {
+              "name": "router_score",
+              "type": "REAL"
+            },
+            {
+              "name": "learning_mode",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "actual_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "outcome",
+              "type": "TEXT"
+            },
+            {
+              "name": "pump_tier",
+              "type": "TEXT"
+            },
+            {
+              "name": "decided_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "lgbm_prob",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [
+              "channel_name",
+              "channel_score"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "mc_usd"
+            ],
+            "message": [],
+            "mint": [
+              "token_address",
+              "caller_count"
+            ],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "hermes_decisions",
+          "row_count": 9129
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "logged_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "context_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "decision",
+              "type": "TEXT"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "primary_reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "actual_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "outcome_label",
+              "type": "TEXT"
+            },
+            {
+              "name": "scored",
+              "type": "INTEGER"
+            },
+            {
+              "name": "question_scores_json",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [
+              "context_json"
+            ],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "hermes_qa_log",
+          "row_count": 9129
+        },
+        {
+          "columns": [
+            {
+              "name": "question_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "weight",
+              "type": "REAL"
+            },
+            {
+              "name": "correct_predictions",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_predictions",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_updated",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "hermes_question_weights",
+          "row_count": 15
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ts",
+              "type": "INTEGER"
+            },
+            {
+              "name": "momentum_5m",
+              "type": "REAL"
+            },
+            {
+              "name": "momentum_15m",
+              "type": "REAL"
+            },
+            {
+              "name": "acceleration",
+              "type": "REAL"
+            },
+            {
+              "name": "trend_phase",
+              "type": "TEXT"
+            },
+            {
+              "name": "drawdown",
+              "type": "REAL"
+            },
+            {
+              "name": "time_to_peak_s",
+              "type": "INTEGER"
+            },
+            {
+              "name": "volume_momentum",
+              "type": "REAL"
+            },
+            {
+              "name": "volume_confirmed",
+              "type": "INTEGER"
+            },
+            {
+              "name": "liquidity_change_5m",
+              "type": "REAL"
+            },
+            {
+              "name": "liquidity_divergence",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [
+              "liquidity_change_5m",
+              "liquidity_divergence"
+            ],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "ts",
+              "time_to_peak_s"
+            ],
+            "token_symbol": [],
+            "volume": [
+              "volume_momentum",
+              "volume_confirmed"
+            ]
+          },
+          "name": "mc_features",
+          "row_count": 55658
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mc_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "price_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "volume_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "liquidity_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            },
+            {
+              "name": "ts",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [
+              "liquidity_usd"
+            ],
+            "market_cap": [
+              "mc_usd"
+            ],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [
+              "price_usd"
+            ],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [
+              "source"
+            ],
+            "timestamp": [
+              "ts"
+            ],
+            "token_symbol": [],
+            "volume": [
+              "volume_usd"
+            ]
+          },
+          "name": "mc_snapshots",
+          "row_count": 154300
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "source_alert",
+              "type": "INTEGER"
+            },
+            {
+              "name": "entry_sig",
+              "type": "TEXT"
+            },
+            {
+              "name": "size_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "token_amount",
+              "type": "INTEGER"
+            },
+            {
+              "name": "entry_price",
+              "type": "REAL"
+            },
+            {
+              "name": "tp_levels_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "sl_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "opened_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "latency_ms",
+              "type": "INTEGER"
+            },
+            {
+              "name": "closed_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "exit_sig",
+              "type": "TEXT"
+            },
+            {
+              "name": "exit_price",
+              "type": "REAL"
+            },
+            {
+              "name": "pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "pnl_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "mode",
+              "type": "TEXT"
+            },
+            {
+              "name": "partial_exits_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "sim_stats_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "strategy_tag",
+              "type": "TEXT"
+            },
+            {
+              "name": "ev_score",
+              "type": "REAL"
+            },
+            {
+              "name": "brain_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "sim_n",
+              "type": "INTEGER"
+            },
+            {
+              "name": "p_rug",
+              "type": "REAL"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "exit_reason",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "source_alert"
+            ],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [
+              "entry_price",
+              "closed_at",
+              "exit_price"
+            ],
+            "signal": [
+              "source_alert"
+            ],
+            "source": [
+              "source_alert"
+            ],
+            "timestamp": [
+              "partial_exits_json",
+              "sim_stats_json"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "positions",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "bot_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "connected_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "disconnected_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "ip_address",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "ip_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "relay_connections",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "mc_at_alert",
+              "type": "REAL"
+            },
+            {
+              "name": "channel_score",
+              "type": "REAL"
+            },
+            {
+              "name": "botty_mode",
+              "type": "TEXT"
+            },
+            {
+              "name": "convergence_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "archetype",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id",
+              "mc_at_alert"
+            ],
+            "channel": [
+              "channel_id",
+              "channel_name",
+              "channel_score"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "mc_at_alert"
+            ],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [
+              "alert_id",
+              "mc_at_alert"
+            ],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "shadow_alerts",
+          "row_count": 37355
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token",
+              "type": "TEXT"
+            },
+            {
+              "name": "decision",
+              "type": "TEXT"
+            },
+            {
+              "name": "reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "shadow_entry_decisions",
+          "row_count": 1156
+        },
+        {
+          "columns": [
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "botty_mode",
+              "type": "TEXT"
+            },
+            {
+              "name": "max_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "min_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "time_to_2x_s",
+              "type": "INTEGER"
+            },
+            {
+              "name": "time_to_5x_s",
+              "type": "INTEGER"
+            },
+            {
+              "name": "final_phase",
+              "type": "TEXT"
+            },
+            {
+              "name": "outcome",
+              "type": "TEXT"
+            },
+            {
+              "name": "labeled_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [
+              "time_to_2x_s",
+              "time_to_5x_s"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "shadow_outcomes",
+          "row_count": 9307
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "snapshot_time",
+              "type": "INTEGER"
+            },
+            {
+              "name": "minutes_since_alert",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mc_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "mc_change_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "liquidity_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "liq_change_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "volume_usd",
+              "type": "REAL"
+            },
+            {
+              "name": "trend_phase",
+              "type": "TEXT"
+            },
+            {
+              "name": "acceleration",
+              "type": "REAL"
+            },
+            {
+              "name": "momentum_5m",
+              "type": "REAL"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "minutes_since_alert"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [
+              "liquidity_usd"
+            ],
+            "market_cap": [
+              "mc_usd",
+              "mc_change_pct"
+            ],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [
+              "minutes_since_alert"
+            ],
+            "source": [
+              "source"
+            ],
+            "timestamp": [
+              "snapshot_time"
+            ],
+            "token_symbol": [],
+            "volume": [
+              "volume_usd"
+            ]
+          },
+          "name": "shadow_snapshots",
+          "row_count": 129671
+        },
+        {
+          "columns": [
+            {
+              "name": "name",
+              "type": ""
+            },
+            {
+              "name": "seq",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "sqlite_sequence",
+          "row_count": 14
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "run_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "param_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "current_val",
+              "type": "REAL"
+            },
+            {
+              "name": "proposed_val",
+              "type": "REAL"
+            },
+            {
+              "name": "model_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "sim_wr_delta",
+              "type": "REAL"
+            },
+            {
+              "name": "sim_pnl_delta",
+              "type": "REAL"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "applied_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "strategy_consensus",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "model_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "weight",
+              "type": "REAL"
+            },
+            {
+              "name": "correct_calls",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_calls",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_updated",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "correct_calls",
+              "total_calls"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "strategy_model_weights",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "run_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "model_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "provider",
+              "type": "TEXT"
+            },
+            {
+              "name": "param_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "current_val",
+              "type": "REAL"
+            },
+            {
+              "name": "proposed_val",
+              "type": "REAL"
+            },
+            {
+              "name": "direction",
+              "type": "TEXT"
+            },
+            {
+              "name": "rationale",
+              "type": "TEXT"
+            },
+            {
+              "name": "sim_wr_delta",
+              "type": "REAL"
+            },
+            {
+              "name": "sim_pnl_delta",
+              "type": "REAL"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "strategy_proposals",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "ts",
+              "type": "INTEGER"
+            },
+            {
+              "name": "from_phase",
+              "type": "TEXT"
+            },
+            {
+              "name": "to_phase",
+              "type": "TEXT"
+            },
+            {
+              "name": "time_since_call_s",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [
+              "channel_id"
+            ],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address",
+              "time_since_call_s"
+            ],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [
+              "ts",
+              "time_since_call_s"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "token_lifecycle",
+          "row_count": 21482
+        },
+        {
+          "columns": [
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            },
+            {
+              "name": "score",
+              "type": "REAL"
+            },
+            {
+              "name": "discovered_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [
+              "source"
+            ],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "trending_tokens",
+          "row_count": 171
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            },
+            {
+              "name": "account",
+              "type": "TEXT"
+            },
+            {
+              "name": "content",
+              "type": "TEXT"
+            },
+            {
+              "name": "sentiment",
+              "type": "REAL"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "engagement",
+              "type": "INTEGER"
+            },
+            {
+              "name": "scan_ts",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address",
+              "scan_ts"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [
+              "source"
+            ],
+            "timestamp": [
+              "sentiment",
+              "scan_ts",
+              "created_at"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "twitter_signals",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "wallet_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "side",
+              "type": "TEXT"
+            },
+            {
+              "name": "sol_amount",
+              "type": "REAL"
+            },
+            {
+              "name": "token_amount",
+              "type": "REAL"
+            },
+            {
+              "name": "mc_at_trade",
+              "type": "REAL"
+            },
+            {
+              "name": "signature",
+              "type": "TEXT"
+            },
+            {
+              "name": "ts",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "mc_at_trade"
+            ],
+            "message": [],
+            "mint": [
+              "wallet_address",
+              "token_address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "ts"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_trades",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "address",
+              "type": "TEXT"
+            },
+            {
+              "name": "score",
+              "type": "REAL"
+            },
+            {
+              "name": "win_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_entry_mc",
+              "type": "REAL"
+            },
+            {
+              "name": "realized_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "label",
+              "type": "TEXT"
+            },
+            {
+              "name": "first_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "avg_entry_mc"
+            ],
+            "message": [],
+            "mint": [
+              "address"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallets",
+          "row_count": 1575
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/operational_alerts.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "alert_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "severity",
+              "type": "TEXT"
+            },
+            {
+              "name": "category",
+              "type": "TEXT"
+            },
+            {
+              "name": "source",
+              "type": "TEXT"
+            },
+            {
+              "name": "message",
+              "type": "TEXT"
+            },
+            {
+              "name": "evidence_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [
+              "message"
+            ],
+            "mint": [
+              "category"
+            ],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [
+              "source"
+            ],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "operational_alerts",
+          "row_count": 0
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/projector_state.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "flag_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "flag_value",
+              "type": "TEXT"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "authenticity_flags",
+          "row_count": 19
+        },
+        {
+          "columns": [
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "coordination_score",
+              "type": "REAL"
+            },
+            {
+              "name": "manipulation_score",
+              "type": "REAL"
+            },
+            {
+              "name": "organic_score",
+              "type": "REAL"
+            },
+            {
+              "name": "concentration_score",
+              "type": "REAL"
+            },
+            {
+              "name": "burst_score",
+              "type": "REAL"
+            },
+            {
+              "name": "authenticity_score",
+              "type": "REAL"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "sample_size",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "authenticity_projection",
+          "row_count": 19
+        },
+        {
+          "columns": [
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "state",
+              "type": "TEXT"
+            },
+            {
+              "name": "first_seen_seq",
+              "type": "INTEGER"
+            },
+            {
+              "name": "first_seen_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "graduated",
+              "type": "INTEGER"
+            },
+            {
+              "name": "graduated_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "state",
+              "graduated",
+              "graduated_at"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "lifecycle_projection",
+          "row_count": 19
+        },
+        {
+          "columns": [
+            {
+              "name": "projector_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "last_event_seq",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_event_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "projection_checkpoints",
+          "row_count": 4
+        },
+        {
+          "columns": [
+            {
+              "name": "run_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "started_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "completed_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "mode",
+              "type": "TEXT"
+            },
+            {
+              "name": "events_processed",
+              "type": "INTEGER"
+            },
+            {
+              "name": "projectors_run",
+              "type": "TEXT"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "metadata_json",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "events_processed"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "projection_runs",
+          "row_count": 5
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "cluster_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "cluster_size",
+              "type": "INTEGER"
+            },
+            {
+              "name": "coordination_score",
+              "type": "REAL"
+            },
+            {
+              "name": "detection_method",
+              "type": "TEXT"
+            },
+            {
+              "name": "detected_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "propagation_clusters",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "t0",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_events",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_buys",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_sells",
+              "type": "INTEGER"
+            },
+            {
+              "name": "unique_wallets",
+              "type": "INTEGER"
+            },
+            {
+              "name": "first_wave_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "first_wave_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "follower_wave_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "follower_wave_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "peak_bpm",
+              "type": "REAL"
+            },
+            {
+              "name": "burst_score",
+              "type": "REAL"
+            },
+            {
+              "name": "cascade_depth",
+              "type": "INTEGER"
+            },
+            {
+              "name": "synchronization_score",
+              "type": "REAL"
+            },
+            {
+              "name": "decay_half_life",
+              "type": "REAL"
+            },
+            {
+              "name": "attention_curve",
+              "type": "TEXT"
+            },
+            {
+              "name": "wave_fragmentation_score",
+              "type": "REAL"
+            },
+            {
+              "name": "aggregates_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint",
+              "cascade_depth",
+              "decay_half_life"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "total_events",
+              "unique_wallets"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "propagation_projection",
+          "row_count": 19
+        },
+        {
+          "columns": [
+            {
+              "name": "name",
+              "type": ""
+            },
+            {
+              "name": "seq",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "sqlite_sequence",
+          "row_count": 2
+        },
+        {
+          "columns": [
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "creator_wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "total_buys",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_sells",
+              "type": "INTEGER"
+            },
+            {
+              "name": "unique_wallets",
+              "type": "INTEGER"
+            },
+            {
+              "name": "creator_sell_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "top_wallet_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "buy_sell_ratio",
+              "type": "REAL"
+            },
+            {
+              "name": "total_sol_volume",
+              "type": "REAL"
+            },
+            {
+              "name": "aggregates_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "unique_wallets"
+            ],
+            "token_symbol": [],
+            "volume": [
+              "total_sol_volume"
+            ]
+          },
+          "name": "token_behavior_metrics",
+          "row_count": 19
+        },
+        {
+          "columns": [
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "wave_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "max_wave_size",
+              "type": "INTEGER"
+            },
+            {
+              "name": "wave_gini",
+              "type": "REAL"
+            },
+            {
+              "name": "inter_wave_interval_avg",
+              "type": "REAL"
+            },
+            {
+              "name": "inter_wave_interval_std",
+              "type": "REAL"
+            },
+            {
+              "name": "copy_timing_edges",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_copy_lag_seconds",
+              "type": "REAL"
+            },
+            {
+              "name": "synchronization_windows",
+              "type": "INTEGER"
+            },
+            {
+              "name": "max_sync_window_size",
+              "type": "INTEGER"
+            },
+            {
+              "name": "aggregates_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "token_propagation_metrics",
+          "row_count": 19
+        },
+        {
+          "columns": [
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "creator_wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "first_seen_seq",
+              "type": "INTEGER"
+            },
+            {
+              "name": "buy_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "sell_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "unique_buyers",
+              "type": "INTEGER"
+            },
+            {
+              "name": "unique_sellers",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "token_stats",
+          "row_count": 19
+        },
+        {
+          "columns": [
+            {
+              "name": "wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "tokens_created",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_buys",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_sells",
+              "type": "INTEGER"
+            },
+            {
+              "name": "buy_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "sell_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "coordination_events",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tokens_bought_unique",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tokens_sold_unique",
+              "type": "INTEGER"
+            },
+            {
+              "name": "aggregates_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "coordination_events"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_behavior_metrics",
+          "row_count": 17
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "source_wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "target_wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "edge_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "lag_seconds",
+              "type": "INTEGER"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "first_seen_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "occurrence_count",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [
+              "source_wallet"
+            ],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_influence_edges",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "tokens_created",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_first_wave_entries",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_follower_entries",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_entry_lag_seconds",
+              "type": "REAL"
+            },
+            {
+              "name": "median_entry_lag_seconds",
+              "type": "REAL"
+            },
+            {
+              "name": "early_exit_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "late_exit_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "influence_score",
+              "type": "REAL"
+            },
+            {
+              "name": "follower_ratio",
+              "type": "REAL"
+            },
+            {
+              "name": "consistency_score",
+              "type": "REAL"
+            },
+            {
+              "name": "exit_leading_score",
+              "type": "REAL"
+            },
+            {
+              "name": "aggregates_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_propagation_metrics",
+          "row_count": 17
+        },
+        {
+          "columns": [
+            {
+              "name": "wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "tokens_created",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tokens_bought",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tokens_sold",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_sol_volume",
+              "type": "REAL"
+            },
+            {
+              "name": "first_seen_seq",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_seen_seq",
+              "type": "INTEGER"
+            },
+            {
+              "name": "updated_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": [
+              "total_sol_volume"
+            ]
+          },
+          "name": "wallet_stats",
+          "row_count": 17
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "edge_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "seq",
+              "type": "INTEGER"
+            },
+            {
+              "name": "sol_amount",
+              "type": "REAL"
+            },
+            {
+              "name": "payload_hash",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_token_edges",
+          "row_count": 19
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": "No module named 'duckdb'",
+      "path": "/Users/macbook/openclaw/data/quantbot.duckdb",
+      "tables": [],
+      "type": "duckdb"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/shadow_trading.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "session_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "hour",
+              "type": "INTEGER"
+            },
+            {
+              "name": "timestamp",
+              "type": "REAL"
+            },
+            {
+              "name": "balance_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "net_pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "trades_total",
+              "type": "INTEGER"
+            },
+            {
+              "name": "win_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "open_positions",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "timestamp"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "shadow_hourly",
+          "row_count": 319
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "regime",
+              "type": "TEXT"
+            },
+            {
+              "name": "old_composite",
+              "type": "REAL"
+            },
+            {
+              "name": "new_composite",
+              "type": "REAL"
+            },
+            {
+              "name": "old_verdict",
+              "type": "TEXT"
+            },
+            {
+              "name": "new_verdict",
+              "type": "TEXT"
+            },
+            {
+              "name": "would_old_trade",
+              "type": "INTEGER"
+            },
+            {
+              "name": "would_new_trade",
+              "type": "INTEGER"
+            },
+            {
+              "name": "diff_reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "peak_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "shadow_regime_test",
+          "row_count": 205141
+        },
+        {
+          "columns": [
+            {
+              "name": "session_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "started_at",
+              "type": "REAL"
+            },
+            {
+              "name": "duration_hours",
+              "type": "REAL"
+            },
+            {
+              "name": "balance_start",
+              "type": "REAL"
+            },
+            {
+              "name": "balance_final",
+              "type": "REAL"
+            },
+            {
+              "name": "net_pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "total_trades",
+              "type": "INTEGER"
+            },
+            {
+              "name": "win_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "data_json",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "shadow_sessions",
+          "row_count": 52
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "session_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "channel_score",
+              "type": "REAL"
+            },
+            {
+              "name": "entry_mc",
+              "type": "REAL"
+            },
+            {
+              "name": "size_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "entry_time",
+              "type": "REAL"
+            },
+            {
+              "name": "exit_time",
+              "type": "REAL"
+            },
+            {
+              "name": "exit_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "pnl_pct",
+              "type": "REAL"
+            },
+            {
+              "name": "hold_minutes",
+              "type": "REAL"
+            },
+            {
+              "name": "exit_reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            },
+            {
+              "name": "is_win",
+              "type": "INTEGER"
+            },
+            {
+              "name": "is_rug",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "tp2_hit",
+              "type": "INTEGER"
+            },
+            {
+              "name": "pump_tier",
+              "type": "TEXT"
+            },
+            {
+              "name": "strategy_tag",
+              "type": "TEXT"
+            },
+            {
+              "name": "ev_score",
+              "type": "REAL"
+            },
+            {
+              "name": "brain_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "signal_grade",
+              "type": "TEXT"
+            },
+            {
+              "name": "grade_size_mult",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [
+              "channel_name",
+              "channel_score"
+            ],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [
+              "entry_mc"
+            ],
+            "message": [],
+            "mint": [
+              "token_address"
+            ],
+            "price": [],
+            "signal": [
+              "signal_grade"
+            ],
+            "source": [],
+            "timestamp": [
+              "entry_time",
+              "exit_time"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "shadow_trades",
+          "row_count": 162
+        },
+        {
+          "columns": [
+            {
+              "name": "name",
+              "type": ""
+            },
+            {
+              "name": "seq",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "sqlite_sequence",
+          "row_count": 2
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/twitter_alpha.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "account",
+              "type": "TEXT"
+            },
+            {
+              "name": "tier",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_calls",
+              "type": "INTEGER"
+            },
+            {
+              "name": "winning_calls",
+              "type": "INTEGER"
+            },
+            {
+              "name": "win_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_peak_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "best_call",
+              "type": "TEXT"
+            },
+            {
+              "name": "best_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "last_call_time",
+              "type": "REAL"
+            },
+            {
+              "name": "auto_discovered",
+              "type": "INTEGER"
+            },
+            {
+              "name": "reputation_score",
+              "type": "REAL"
+            },
+            {
+              "name": "updated_at",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "total_calls",
+              "winning_calls",
+              "best_call",
+              "last_call_time"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "last_call_time"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "alpha_callers",
+          "row_count": 269
+        },
+        {
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "account",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "tweet_text",
+              "type": "TEXT"
+            },
+            {
+              "name": "tweet_time",
+              "type": "REAL"
+            },
+            {
+              "name": "mc_at_call",
+              "type": "REAL"
+            },
+            {
+              "name": "peak_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "peak_time",
+              "type": "REAL"
+            },
+            {
+              "name": "is_win",
+              "type": "INTEGER"
+            },
+            {
+              "name": "is_rug",
+              "type": "INTEGER"
+            },
+            {
+              "name": "social_score",
+              "type": "REAL"
+            },
+            {
+              "name": "caller_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "discovered_at",
+              "type": "REAL"
+            },
+            {
+              "name": "alert_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "groq_score",
+              "type": "REAL"
+            },
+            {
+              "name": "groq_rug_risk",
+              "type": "TEXT"
+            },
+            {
+              "name": "groq_reason",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "alert_id"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [
+              "mc_at_call"
+            ],
+            "message": [
+              "tweet_text"
+            ],
+            "mint": [
+              "token_address",
+              "mc_at_call",
+              "caller_count"
+            ],
+            "price": [],
+            "signal": [
+              "alert_id"
+            ],
+            "source": [],
+            "timestamp": [
+              "tweet_time",
+              "peak_time"
+            ],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "alpha_signals",
+          "row_count": 6051
+        },
+        {
+          "columns": [
+            {
+              "name": "account",
+              "type": "TEXT"
+            },
+            {
+              "name": "discovered_at",
+              "type": "REAL"
+            },
+            {
+              "name": "discovery_reason",
+              "type": "TEXT"
+            },
+            {
+              "name": "initial_score",
+              "type": "REAL"
+            },
+            {
+              "name": "confirmed",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "discovered_accounts",
+          "row_count": 199
+        },
+        {
+          "columns": [
+            {
+              "name": "token_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "ticker",
+              "type": "TEXT"
+            },
+            {
+              "name": "social_score",
+              "type": "REAL"
+            },
+            {
+              "name": "verdict",
+              "type": "TEXT"
+            },
+            {
+              "name": "key_insight",
+              "type": "TEXT"
+            },
+            {
+              "name": "cached_at",
+              "type": "REAL"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "token_address",
+              "cached_at"
+            ],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [
+              "ticker"
+            ],
+            "volume": []
+          },
+          "name": "social_cache",
+          "row_count": 0
+        },
+        {
+          "columns": [
+            {
+              "name": "name",
+              "type": ""
+            },
+            {
+              "name": "seq",
+              "type": ""
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "sqlite_sequence",
+          "row_count": 1
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/wallet_graph.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "run_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "build_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "started_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "finished_at",
+              "type": "INTEGER"
+            },
+            {
+              "name": "node_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "edge_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "cluster_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "data_sources",
+              "type": "TEXT"
+            },
+            {
+              "name": "parameters",
+              "type": "TEXT"
+            },
+            {
+              "name": "summary",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [
+              "data_sources"
+            ],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "graph_build_runs",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "cluster_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "run_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "cluster_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "member_wallets",
+              "type": "TEXT"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_alpha_score",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_sniper_prob",
+              "type": "REAL"
+            },
+            {
+              "name": "coordinates",
+              "type": "TEXT"
+            },
+            {
+              "name": "member_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "member_wallets",
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_clusters",
+          "row_count": 6
+        },
+        {
+          "columns": [
+            {
+              "name": "edge_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "run_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "wallet_a",
+              "type": "TEXT"
+            },
+            {
+              "name": "wallet_b",
+              "type": "TEXT"
+            },
+            {
+              "name": "edge_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "weight",
+              "type": "REAL"
+            },
+            {
+              "name": "evidence",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_edges",
+          "row_count": 31052
+        },
+        {
+          "columns": [
+            {
+              "name": "wallet_address",
+              "type": "TEXT"
+            },
+            {
+              "name": "run_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "total_trades",
+              "type": "INTEGER"
+            },
+            {
+              "name": "buy_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "sell_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "total_sol_volume",
+              "type": "REAL"
+            },
+            {
+              "name": "unique_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "first_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "last_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_buy_size",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_sell_size",
+              "type": "REAL"
+            },
+            {
+              "name": "labels",
+              "type": "TEXT"
+            },
+            {
+              "name": "reputation_score",
+              "type": "REAL"
+            },
+            {
+              "name": "source_alert_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_5x_exit",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_2x_exit",
+              "type": "INTEGER"
+            },
+            {
+              "name": "is_rugged",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alpha_score",
+              "type": "REAL"
+            },
+            {
+              "name": "sniper_probability",
+              "type": "REAL"
+            },
+            {
+              "name": "copy_leader_score",
+              "type": "REAL"
+            },
+            {
+              "name": "copy_follower_score",
+              "type": "REAL"
+            },
+            {
+              "name": "rug_association_score",
+              "type": "REAL"
+            },
+            {
+              "name": "propagation_power",
+              "type": "REAL"
+            },
+            {
+              "name": "tier_label",
+              "type": "TEXT"
+            },
+            {
+              "name": "raw",
+              "type": "TEXT"
+            },
+            {
+              "name": "created_at",
+              "type": "INTEGER"
+            }
+          ],
+          "detected_columns": {
+            "alert": [
+              "source_alert_count"
+            ],
+            "channel": [],
+            "lifecycle": [],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "wallet_address"
+            ],
+            "price": [],
+            "signal": [
+              "source_alert_count"
+            ],
+            "source": [
+              "source_alert_count"
+            ],
+            "timestamp": [
+              "created_at"
+            ],
+            "token_symbol": [],
+            "volume": [
+              "total_sol_volume"
+            ]
+          },
+          "name": "wallet_nodes",
+          "row_count": 312
+        }
+      ],
+      "type": "sqlite"
+    },
+    {
+      "error": null,
+      "path": "/Users/macbook/openclaw/data/wallet_outcomes.db",
+      "tables": [
+        {
+          "columns": [
+            {
+              "name": "run_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "started_at",
+              "type": "TEXT"
+            },
+            {
+              "name": "completed_at",
+              "type": "TEXT"
+            },
+            {
+              "name": "source_db",
+              "type": "TEXT"
+            },
+            {
+              "name": "shadow_db",
+              "type": "TEXT"
+            },
+            {
+              "name": "wallet_graph_db",
+              "type": "TEXT"
+            },
+            {
+              "name": "output_db",
+              "type": "TEXT"
+            },
+            {
+              "name": "tokens_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tokens_aligned",
+              "type": "INTEGER"
+            },
+            {
+              "name": "wallets_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "wallets_aligned",
+              "type": "INTEGER"
+            },
+            {
+              "name": "clusters_seen",
+              "type": "INTEGER"
+            },
+            {
+              "name": "clusters_aligned",
+              "type": "INTEGER"
+            },
+            {
+              "name": "warnings_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "status",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "status"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [
+              "source_db"
+            ],
+            "timestamp": [
+              "wallets_seen",
+              "wallets_aligned"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "alignment_runs",
+          "row_count": 1
+        },
+        {
+          "columns": [
+            {
+              "name": "cluster_id",
+              "type": "TEXT"
+            },
+            {
+              "name": "cluster_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "wallet_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "wallets_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "tokens_touched",
+              "type": "INTEGER"
+            },
+            {
+              "name": "aligned_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "rug_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "survivor_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "runner_2x_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "runner_5x_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "runner_10x_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "graduated_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_max_exit_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "rug_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "survival_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "runner_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "cluster_alpha_score",
+              "type": "REAL"
+            },
+            {
+              "name": "cluster_risk_score",
+              "type": "REAL"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "labels_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "evidence_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "graduated_tokens"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [
+              "wallets_json"
+            ],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "cluster_outcomes",
+          "row_count": 6
+        },
+        {
+          "columns": [
+            {
+              "name": "mint",
+              "type": "TEXT"
+            },
+            {
+              "name": "symbol",
+              "type": "TEXT"
+            },
+            {
+              "name": "first_seen_ts",
+              "type": "TEXT"
+            },
+            {
+              "name": "last_seen_ts",
+              "type": "TEXT"
+            },
+            {
+              "name": "source_tables_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "wallet_trade_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "unique_wallets",
+              "type": "INTEGER"
+            },
+            {
+              "name": "shadow_trade_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "closed_trade_count",
+              "type": "INTEGER"
+            },
+            {
+              "name": "max_exit_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "max_pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "total_pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "best_return_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "worst_return_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "is_rug",
+              "type": "INTEGER"
+            },
+            {
+              "name": "is_collapse",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_2x",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_5x",
+              "type": "INTEGER"
+            },
+            {
+              "name": "has_10x",
+              "type": "INTEGER"
+            },
+            {
+              "name": "survived_10m",
+              "type": "INTEGER"
+            },
+            {
+              "name": "graduated",
+              "type": "INTEGER"
+            },
+            {
+              "name": "outcome_label",
+              "type": "TEXT"
+            },
+            {
+              "name": "outcome_confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "evidence_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "warnings_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "graduated"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [
+              "mint"
+            ],
+            "price": [
+              "closed_trade_count"
+            ],
+            "signal": [],
+            "source": [
+              "source_tables_json"
+            ],
+            "timestamp": [
+              "first_seen_ts",
+              "last_seen_ts",
+              "unique_wallets"
+            ],
+            "token_symbol": [
+              "symbol"
+            ],
+            "volume": []
+          },
+          "name": "token_outcomes",
+          "row_count": 84556
+        },
+        {
+          "columns": [
+            {
+              "name": "wallet",
+              "type": "TEXT"
+            },
+            {
+              "name": "tokens_touched",
+              "type": "INTEGER"
+            },
+            {
+              "name": "aligned_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "alignment_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "rug_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "collapse_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "survivor_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "runner_2x_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "runner_5x_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "runner_10x_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "graduated_tokens",
+              "type": "INTEGER"
+            },
+            {
+              "name": "avg_max_exit_mult",
+              "type": "REAL"
+            },
+            {
+              "name": "avg_pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "total_pnl_sol",
+              "type": "REAL"
+            },
+            {
+              "name": "rug_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "survival_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "runner_rate",
+              "type": "REAL"
+            },
+            {
+              "name": "outcome_alpha_score",
+              "type": "REAL"
+            },
+            {
+              "name": "outcome_risk_score",
+              "type": "REAL"
+            },
+            {
+              "name": "confidence",
+              "type": "REAL"
+            },
+            {
+              "name": "labels_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "evidence_json",
+              "type": "TEXT"
+            },
+            {
+              "name": "updated_at",
+              "type": "TEXT"
+            }
+          ],
+          "detected_columns": {
+            "alert": [],
+            "channel": [],
+            "lifecycle": [
+              "graduated_tokens"
+            ],
+            "liquidity": [],
+            "market_cap": [],
+            "message": [],
+            "mint": [],
+            "price": [],
+            "signal": [],
+            "source": [],
+            "timestamp": [],
+            "token_symbol": [],
+            "volume": []
+          },
+          "name": "wallet_outcomes",
+          "row_count": 312
+        }
+      ],
+      "type": "sqlite"
+    }
+  ],
+  "totals": {
+    "duckdb": 1,
+    "sqlite": 16,
+    "tables": 117
+  }
+}

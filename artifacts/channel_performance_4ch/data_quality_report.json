@@ -1,10 +1,11 @@
 {
-  "analyzed_alerts": 120965,
+  "analyzed_alerts": 121339,
+  "joined_historical_market_alerts": 0,
   "price_sources": {
-    "paper_simulated": 120965
+    "paper_simulated": 121339
   },
   "real_market_price_points_indexed": 0,
-  "selected_channel_alerts": 128458,
+  "selected_channel_alerts": 128832,
   "selected_channels": [
     "WhaleSignal Meme Coin",
     "WaveX Call - Multichain",

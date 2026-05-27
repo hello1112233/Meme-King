@@ -7,7 +7,7 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from meme_king.channel_performance_analyzer import ChannelPerformanceAnalyzer, load_market_records
+from meme_king.channel_performance_analyzer import ChannelPerformanceAnalyzer
 from meme_king.deterministic import read_json, read_jsonl, rel, write_json, write_jsonl
 
 
@@ -20,22 +20,13 @@ def main() -> None:
     selected_channels = [row["canonical_name"] for row in config.get("channels", [])]
     paper_positions = read_jsonl(rel("artifacts/paper_trading/paper_positions.jsonl"))
     paper_exits = read_jsonl(rel("artifacts/paper_trading/paper_exits.jsonl"))
-    market_records = load_market_records(
-        [
-            rel("data/source_exports"),
-            rel("artifacts/paper_trading"),
-            rel("artifacts/hermes_trade_skill"),
-            rel("artifacts/execution_gate"),
-            Path("/Users/macbook/openclaw/data"),
-            Path("/Users/macbook/Meme-Queen.archive.20260523_0203"),
-        ]
-    )
+    joined_performances = read_jsonl(rel("artifacts/historical_market_data/alert_market_performance_4ch.jsonl"))
 
     analyzer = ChannelPerformanceAnalyzer(
         selected_channels=selected_channels,
-        market_records=market_records,
         paper_positions=paper_positions,
         paper_exits=paper_exits,
+        joined_performances=joined_performances,
     )
     performances = analyzer.analyze_alerts(calls)
     channel_summary = analyzer.summarize_channels(performances)

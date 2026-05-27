@@ -1,12 +1,12 @@
 {
   "GMGN Featured Signals(Lv1) - SOL": {
-    "avg_pnl_x": 2.049179,
-    "expectancy_units": 1.049179,
-    "max_drawdown_units": -229.86425,
-    "profit_factor": 7.297032,
-    "total_pnl_units": 116901.57205,
-    "trades": 111422,
-    "winrate": 0.074851
+    "avg_pnl_x": 2.045897,
+    "expectancy_units": 1.045897,
+    "max_drawdown_units": -230.20425,
+    "profit_factor": 7.27796,
+    "total_pnl_units": 116869.57305,
+    "trades": 111741,
+    "winrate": 0.074941
   },
   "Twitter @pumpdotfun (alpha)": {
     "avg_pnl_x": 0.82,
@@ -18,13 +18,13 @@
     "winrate": 0.0
   },
   "WaveX Call - Multichain": {
-    "avg_pnl_x": 1.581136,
-    "expectancy_units": 0.581136,
+    "avg_pnl_x": 1.581192,
+    "expectancy_units": 0.581192,
     "max_drawdown_units": -0.54,
-    "profit_factor": 91.207857,
-    "total_pnl_units": 5488.246,
-    "trades": 9444,
-    "winrate": 0.96421
+    "profit_factor": 91.742061,
+    "total_pnl_units": 5520.747,
+    "trades": 9499,
+    "winrate": 0.964417
   },
   "WhaleSignal Meme Coin": {
     "avg_pnl_x": 1.695115,

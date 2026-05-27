@@ -1,0 +1,23 @@
+{
+  "channel_alerts_4ch": 328835,
+  "duckdb_dbs_found": 1,
+  "errors": [
+    {
+      "error": "database disk image is malformed",
+      "source_db": "/Users/macbook/openclaw/data/openclaw.db"
+    },
+    {
+      "error": "No module named 'duckdb'",
+      "source_db": "/Users/macbook/openclaw/data/quantbot.duckdb"
+    }
+  ],
+  "market_snapshots_4ch": 379421,
+  "rows_excluded": 2099489,
+  "rows_extracted": 722978,
+  "source_rows_scanned": 2649915,
+  "sqlite_dbs_found": 16,
+  "tables_scanned": 102,
+  "tables_with_matches": 15,
+  "token_lifecycle_4ch": 14722,
+  "token_universe_size": 25225
+}

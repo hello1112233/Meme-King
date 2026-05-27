@@ -384,6 +384,7 @@ class LivePaperRuntime:
         db_path: Path,
         max_events: int | None = None,
         duration_seconds: float | None = None,
+        skill: HermesTradeSkill | None = None,
     ) -> None:
         self.ingestors = ingestors
         self.out_dir = out_dir
@@ -418,7 +419,7 @@ class LivePaperRuntime:
             registry=self.registry,
         )
 
-        self.skill = self._load_skill()
+        self.skill = skill or self._load_skill()
         self.executor = PaperExecutor(
             take_profit_x=profile.take_profit_x,
             stop_loss_x=profile.stop_loss_x,
@@ -428,6 +429,7 @@ class LivePaperRuntime:
         self.signals_file = self.out_dir / "live_signals.jsonl"
         self.gate_file = self.out_dir / "live_gate_decisions.jsonl"
         self.positions_file = self.out_dir / "live_paper_positions.jsonl"
+        self.positions_file.touch(exist_ok=True)
 
     def _load_skill(self) -> HermesTradeSkill:
         rules = read_json(rel("artifacts/hermes_trade_skill/skill_rules.json"), default={})

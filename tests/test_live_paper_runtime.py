@@ -234,6 +234,19 @@ def test_live_runtime_paper_trade_generation():
     with tempfile.TemporaryDirectory() as tmpdir:
         out_dir = Path(tmpdir) / "out"
         db_path = Path(tmpdir) / "state.db"
+        skill = HermesTradeSkill(
+            EntryRule(
+                min_confidence=0.0,
+                allowed_channels=["WaveX Call - Multichain"],
+                max_signal_age=999999999,
+                strategy_profile="balanced",
+                cooldown_seconds=0,
+                duplicate_window_seconds=0,
+                min_channel_winrate=0.0,
+                min_channel_trades=0,
+            ),
+            ExitRule(stop_loss_pct=0.3, take_profit_pct=0.5, max_hold_seconds=7200),
+        )
         # High-confidence clean event that should pass gate + skill
         raw = [
             {"source": "telegram", "channel_name": "WaveX Call - Multichain", "token_symbol": "WIN", "confidence": 0.9, "raw_text": "clean", "timestamp": "2026-05-25T12:00:00Z"},
@@ -244,6 +257,7 @@ def test_live_runtime_paper_trade_generation():
             out_dir=out_dir,
             db_path=db_path,
             max_events=10,
+            skill=skill,
         )
         asyncio.run(runtime.run())
 

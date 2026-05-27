@@ -56,11 +56,17 @@ The paper dashboard is written to `artifacts/paper_trading/index.html`.
 
 ## Four-Channel Historical Performance
 
+Pull four-channel-only historical SQLite/DuckDB market data, join it to alerts, and refresh the dashboard:
+
+```bash
+bash scripts/pull_4_channel_historical_db_data.sh
+```
+
 ```bash
 bash scripts/analyze_4_channel_performance.sh
 ```
 
-This analyzes historical alerts from the four allowlisted channels and writes a read-only performance dashboard to `artifacts/channel_performance_4ch/index.html`. It reports per-channel win rate, max gain, X gain, time to max, best hold windows, quick-flip ranking, longer-hold ranking, and data quality warnings. Rows are marked as `real_historical` when local price history is available, or `paper_simulated` when deterministic paper replay fields are used instead.
+This analyzes historical alerts from the four allowlisted channels and writes a read-only performance dashboard to `artifacts/channel_performance_4ch/index.html`. It reports per-channel win rate, max gain, X gain, time to max, best hold windows, quick-flip ranking, longer-hold ranking, and data quality warnings. Rows are marked as `historical_market_4ch` when joined local SQLite/DuckDB price history is available, or `paper_simulated` when deterministic paper replay fields are used instead.
 
 Run the paper-only execution gate:
 
@@ -134,6 +140,10 @@ artifacts/index.html
 - `artifacts/channel_performance_4ch/channel_summary.json`
 - `artifacts/channel_performance_4ch/hold_window_summary.json`
 - `artifacts/channel_performance_4ch/index.html`
+- `artifacts/historical_market_data/token_universe_4ch.json`
+- `artifacts/historical_market_data/db_inventory.json`
+- `artifacts/historical_market_data/market_snapshots_4ch.jsonl`
+- `artifacts/historical_market_data/alert_market_performance_4ch.jsonl`
 - `artifacts/execution_gate/gate_summary.json`
 - `artifacts/execution_gate/index.html`
 - `artifacts/hermes_trade_skill/skill_rules.json`

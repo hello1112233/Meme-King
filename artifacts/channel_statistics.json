@@ -3,9 +3,9 @@
     "best_max_x": 397.1151,
     "median_confidence": 1.0,
     "median_max_x": 4.2146,
-    "records": 117894,
-    "replayable": 111433,
-    "unique_tokens": 6221,
+    "records": 118213,
+    "replayable": 111752,
+    "unique_tokens": 6237,
     "winrate_at_1_5x": 0.9689119170984456
   },
   "Twitter @pumpdotfun (alpha)": {
@@ -21,9 +21,9 @@
     "best_max_x": 332.4984,
     "median_confidence": 1.0,
     "median_max_x": 1.4601,
-    "records": 10400,
-    "replayable": 9444,
-    "unique_tokens": 5836,
+    "records": 10455,
+    "replayable": 9499,
+    "unique_tokens": 5876,
     "winrate_at_1_5x": 0.4782608695652174
   },
   "WhaleSignal Meme Coin": {

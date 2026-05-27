@@ -1,21 +1,21 @@
 {
-  "avg_pnl_x": 2.012008,
+  "avg_pnl_x": 2.008892,
   "exit_reasons": {
-    "max_hold": 106300,
+    "max_hold": 106589,
     "stop_loss": 531,
-    "take_profit": 14134
+    "take_profit": 14219
   },
   "live_trading": false,
   "mode": "paper_trading_simulation_only",
-  "paper_exits": 120965,
-  "paper_fills": 241930,
-  "paper_orders": 241930,
-  "paper_positions": 120965,
-  "paper_trades": 120965,
+  "paper_exits": 121339,
+  "paper_fills": 242678,
+  "paper_orders": 242678,
+  "paper_positions": 121339,
+  "paper_trades": 121339,
   "per_channel_positions": {
-    "GMGN Featured Signals(Lv1) - SOL": 111422,
+    "GMGN Featured Signals(Lv1) - SOL": 111741,
     "Twitter @pumpdotfun (alpha)": 47,
-    "WaveX Call - Multichain": 9444,
+    "WaveX Call - Multichain": 9499,
     "WhaleSignal Meme Coin": 52
   },
   "rpc_broadcast": false,
@@ -25,7 +25,7 @@
     "WaveX Call - Multichain",
     "WhaleSignal Meme Coin"
   ],
-  "total_input_calls": 128458,
+  "total_input_calls": 128832,
   "wallets": false,
-  "winrate": 0.146943
+  "winrate": 0.147224
 }

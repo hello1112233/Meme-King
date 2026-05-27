@@ -3,22 +3,22 @@
   "best_quick_flip_channel": "GMGN Featured Signals(Lv1) - SOL",
   "channels": {
     "GMGN Featured Signals(Lv1) - SOL": {
-      "alerts": 111422,
-      "average_max_gain_pct": 121.579333,
-      "average_max_gain_x": 2.215793,
+      "alerts": 111741,
+      "average_max_gain_pct": 121.249519,
+      "average_max_gain_x": 2.212495,
       "best_hold_window": "24h",
       "channel_name": "GMGN Featured Signals(Lv1) - SOL",
-      "longer_hold_score": 2.215793,
+      "longer_hold_score": 2.212495,
       "median_max_gain_pct": 0.0,
       "median_max_gain_x": 1.0,
       "price_sources": {
-        "paper_simulated": 111422
+        "paper_simulated": 111741
       },
-      "quick_flip_score": 2.213702,
-      "tokens": 18069,
-      "win_rate_100_pct": 0.007144,
-      "win_rate_25_pct": 0.052324,
-      "win_rate_50_pct": 0.048455
+      "quick_flip_score": 2.210407,
+      "tokens": 18128,
+      "win_rate_100_pct": 0.007124,
+      "win_rate_25_pct": 0.052478,
+      "win_rate_50_pct": 0.048612
     },
     "Twitter @pumpdotfun (alpha)": {
       "alerts": 47,
@@ -39,22 +39,22 @@
       "win_rate_50_pct": 0.0
     },
     "WaveX Call - Multichain": {
-      "alerts": 9444,
-      "average_max_gain_pct": 58.757793,
-      "average_max_gain_x": 1.587578,
+      "alerts": 9499,
+      "average_max_gain_pct": 58.759733,
+      "average_max_gain_x": 1.587597,
       "best_hold_window": "24h",
       "channel_name": "WaveX Call - Multichain",
-      "longer_hold_score": 1.587578,
+      "longer_hold_score": 1.587597,
       "median_max_gain_pct": 65.0,
       "median_max_gain_x": 1.65,
       "price_sources": {
-        "paper_simulated": 9444
+        "paper_simulated": 9499
       },
-      "quick_flip_score": 1.577723,
-      "tokens": 5768,
+      "quick_flip_score": 1.577719,
+      "tokens": 5808,
       "win_rate_100_pct": 0.0,
-      "win_rate_25_pct": 0.96421,
-      "win_rate_50_pct": 0.924291
+      "win_rate_25_pct": 0.964417,
+      "win_rate_50_pct": 0.924413
     },
     "WhaleSignal Meme Coin": {
       "alerts": 52,
@@ -77,9 +77,9 @@
   },
   "longer_hold_ranking": [
     {
-      "alerts": 111422,
+      "alerts": 111741,
       "channel_name": "GMGN Featured Signals(Lv1) - SOL",
-      "longer_hold_score": 2.215793
+      "longer_hold_score": 2.212495
     },
     {
       "alerts": 52,
@@ -87,9 +87,9 @@
       "longer_hold_score": 1.847423
     },
     {
-      "alerts": 9444,
+      "alerts": 9499,
       "channel_name": "WaveX Call - Multichain",
-      "longer_hold_score": 1.587578
+      "longer_hold_score": 1.587597
     },
     {
       "alerts": 47,
@@ -99,9 +99,9 @@
   ],
   "quick_flip_ranking": [
     {
-      "alerts": 111422,
+      "alerts": 111741,
       "channel_name": "GMGN Featured Signals(Lv1) - SOL",
-      "quick_flip_score": 2.213702
+      "quick_flip_score": 2.210407
     },
     {
       "alerts": 52,
@@ -109,9 +109,9 @@
       "quick_flip_score": 1.841101
     },
     {
-      "alerts": 9444,
+      "alerts": 9499,
       "channel_name": "WaveX Call - Multichain",
-      "quick_flip_score": 1.577723
+      "quick_flip_score": 1.577719
     },
     {
       "alerts": 47,
