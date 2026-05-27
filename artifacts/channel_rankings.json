@@ -2,35 +2,35 @@
   {
     "best_max_x": 397.1151,
     "channel_name": "GMGN Featured Signals(Lv1) - SOL",
-    "confidence_ranking": 98.7166,
+    "confidence_ranking": 98.7565,
     "median_confidence": 1.0,
-    "median_max_x": 4.399,
-    "records": 101703,
-    "replayable": 96954,
-    "unique_tokens": 5494,
-    "winrate_at_1_5x": 0.9679144385026738
+    "median_max_x": 4.2146,
+    "records": 117894,
+    "replayable": 111433,
+    "unique_tokens": 6221,
+    "winrate_at_1_5x": 0.9689119170984456
   },
   {
     "best_max_x": 86.851,
     "channel_name": "WhaleSignal Meme Coin",
-    "confidence_ranking": 85.0,
-    "median_confidence": 0.88,
-    "median_max_x": 59.6762,
-    "records": 79,
-    "replayable": 35,
-    "unique_tokens": 16,
+    "confidence_ranking": 90.27,
+    "median_confidence": 0.8835,
+    "median_max_x": 53.5666,
+    "records": 113,
+    "replayable": 54,
+    "unique_tokens": 26,
     "winrate_at_1_5x": 1.0
   },
   {
     "best_max_x": 332.4984,
     "channel_name": "WaveX Call - Multichain",
-    "confidence_ranking": 78.0711,
+    "confidence_ranking": 79.1304,
     "median_confidence": 1.0,
-    "median_max_x": 1.4207,
-    "records": 6281,
-    "replayable": 5500,
-    "unique_tokens": 3464,
-    "winrate_at_1_5x": 0.4517766497461929
+    "median_max_x": 1.4601,
+    "records": 10400,
+    "replayable": 9444,
+    "unique_tokens": 5836,
+    "winrate_at_1_5x": 0.4782608695652174
   },
   {
     "best_max_x": 500.0,

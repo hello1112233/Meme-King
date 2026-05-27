@@ -5,13 +5,13 @@
     "balanced": {
       "channel_performance": {
         "GMGN Featured Signals(Lv1) - SOL": {
-          "avg_pnl_x": 2.232091,
-          "expectancy_units": 1.232091,
-          "max_drawdown_units": -238.88185,
-          "profit_factor": 7.438217,
-          "total_pnl_units": 116111.02635,
-          "trades": 94239,
-          "winrate": 0.045257
+          "avg_pnl_x": 2.054151,
+          "expectancy_units": 1.054151,
+          "max_drawdown_units": -265.37325,
+          "profit_factor": 6.573191,
+          "total_pnl_units": 114606.29135,
+          "trades": 108719,
+          "winrate": 0.056099
         },
         "Twitter @pumpdotfun (alpha)": {
           "avg_pnl_x": 0.8,
@@ -23,47 +23,47 @@
           "winrate": 0.0
         },
         "WaveX Call - Multichain": {
-          "avg_pnl_x": 1.553059,
-          "expectancy_units": 0.553059,
+          "avg_pnl_x": 1.561539,
+          "expectancy_units": 0.561539,
           "max_drawdown_units": -0.6,
-          "profit_factor": 65.150148,
-          "total_pnl_units": 3040.717,
-          "trades": 5498,
-          "winrate": 0.956893
+          "profit_factor": 80.585075,
+          "total_pnl_units": 5300.366,
+          "trades": 9439,
+          "winrate": 0.964721
         },
         "WhaleSignal Meme Coin": {
-          "avg_pnl_x": 5.537152,
-          "expectancy_units": 4.537152,
-          "max_drawdown_units": -1.624,
-          "profit_factor": 28.727037,
-          "total_pnl_units": 149.726,
-          "trades": 33,
-          "winrate": 0.181818
+          "avg_pnl_x": 0.898745,
+          "expectancy_units": -0.101255,
+          "max_drawdown_units": -5.164,
+          "profit_factor": 0.413182,
+          "total_pnl_units": -5.164,
+          "trades": 51,
+          "winrate": 0.137255
         }
       },
       "exit_reason_stats": {
         "max_hold": {
-          "expectancy_units": -0.194011,
-          "profit_factor": 0.014473,
-          "share": 0.908082,
-          "total_pnl_units": -17585.5297,
-          "trades": 90642,
-          "winrate": 0.009797
+          "expectancy_units": -0.193729,
+          "profit_factor": 0.016022,
+          "share": 0.875998,
+          "total_pnl_units": -20068.8047,
+          "trades": 103592,
+          "winrate": 0.010416
         },
         "stop_loss": {
           "expectancy_units": -0.476591,
           "profit_factor": 0.0,
-          "share": 0.00532,
+          "share": 0.00449,
           "total_pnl_units": -253.06965,
           "trades": 531,
           "winrate": 0.0
         },
         "take_profit": {
-          "expectancy_units": 15.864261,
+          "expectancy_units": 9.921034,
           "profit_factor": Infinity,
-          "share": 0.086598,
-          "total_pnl_units": 137130.6687,
-          "trades": 8644,
+          "share": 0.119512,
+          "total_pnl_units": 140213.9677,
+          "trades": 14133,
           "winrate": 1.0
         }
       },
@@ -81,18 +81,18 @@
         "take_profit_x": 1.5
       },
       "summary": {
-        "avg_pnl_x": 2.195108,
+        "avg_pnl_x": 2.013835,
         "exit_reasons": {
-          "max_hold": 90642,
+          "max_hold": 103592,
           "stop_loss": 531,
-          "take_profit": 8644
+          "take_profit": 14133
         },
-        "expectancy_units": 1.195108,
-        "max_drawdown_units": -238.88185,
-        "profit_factor": 7.591867,
-        "total_pnl_units": 119292.06935,
-        "trades": 99817,
-        "winrate": 0.095495
+        "expectancy_units": 1.013835,
+        "max_drawdown_units": -265.37325,
+        "profit_factor": 6.806291,
+        "total_pnl_units": 119892.09335,
+        "trades": 118256,
+        "winrate": 0.128636
       }
     },
     "conservative": {
@@ -100,28 +100,28 @@
         "GMGN Featured Signals(Lv1) - SOL": {
           "avg_pnl_x": 0.81,
           "expectancy_units": -0.095,
-          "max_drawdown_units": -256.215,
+          "max_drawdown_units": -430.54,
           "profit_factor": 0.0,
-          "total_pnl_units": -256.215,
-          "trades": 2697,
+          "total_pnl_units": -430.54,
+          "trades": 4532,
           "winrate": 0.0
         },
         "WaveX Call - Multichain": {
           "avg_pnl_x": 0.81,
           "expectancy_units": -0.095,
-          "max_drawdown_units": -499.605,
+          "max_drawdown_units": -864.88,
           "profit_factor": 0.0,
-          "total_pnl_units": -499.605,
-          "trades": 5259,
+          "total_pnl_units": -864.88,
+          "trades": 9104,
           "winrate": 0.0
         },
         "WhaleSignal Meme Coin": {
           "avg_pnl_x": 0.81,
           "expectancy_units": -0.095,
-          "max_drawdown_units": -0.285,
+          "max_drawdown_units": -0.475,
           "profit_factor": 0.0,
-          "total_pnl_units": -0.285,
-          "trades": 3,
+          "total_pnl_units": -0.475,
+          "trades": 5,
           "winrate": 0.0
         }
       },
@@ -130,8 +130,8 @@
           "expectancy_units": -0.095,
           "profit_factor": 0.0,
           "share": 1.0,
-          "total_pnl_units": -756.105,
-          "trades": 7959,
+          "total_pnl_units": -1295.895,
+          "trades": 13641,
           "winrate": 0.0
         }
       },
@@ -151,26 +151,26 @@
       "summary": {
         "avg_pnl_x": 0.81,
         "exit_reasons": {
-          "stop_loss": 7959
+          "stop_loss": 13641
         },
         "expectancy_units": -0.095,
-        "max_drawdown_units": -756.105,
+        "max_drawdown_units": -1295.895,
         "profit_factor": 0.0,
-        "total_pnl_units": -756.105,
-        "trades": 7959,
+        "total_pnl_units": -1295.895,
+        "trades": 13641,
         "winrate": 0.0
       }
     },
     "fast_exit": {
       "channel_performance": {
         "GMGN Featured Signals(Lv1) - SOL": {
-          "avg_pnl_x": 1.930827,
-          "expectancy_units": 0.744662,
-          "max_drawdown_units": -262.725,
-          "profit_factor": 5.838598,
-          "total_pnl_units": 71913.49756,
-          "trades": 96572,
-          "winrate": 0.014362
+          "avg_pnl_x": 1.784032,
+          "expectancy_units": 0.627225,
+          "max_drawdown_units": -309.681,
+          "profit_factor": 5.068291,
+          "total_pnl_units": 69654.61756,
+          "trades": 111052,
+          "winrate": 0.01249
         },
         "Twitter @pumpdotfun (alpha)": {
           "avg_pnl_x": 0.805,
@@ -184,19 +184,19 @@
         "WaveX Call - Multichain": {
           "avg_pnl_x": 0.805,
           "expectancy_units": -0.156,
-          "max_drawdown_units": -857.688,
+          "max_drawdown_units": -1472.484,
           "profit_factor": 0.0,
-          "total_pnl_units": -857.688,
-          "trades": 5498,
+          "total_pnl_units": -1472.484,
+          "trades": 9439,
           "winrate": 0.0
         },
         "WhaleSignal Meme Coin": {
           "avg_pnl_x": 0.805,
           "expectancy_units": -0.156,
-          "max_drawdown_units": -5.148,
+          "max_drawdown_units": -7.956,
           "profit_factor": 0.0,
-          "total_pnl_units": -5.148,
-          "trades": 33,
+          "total_pnl_units": -7.956,
+          "trades": 51,
           "winrate": 0.0
         }
       },
@@ -204,23 +204,23 @@
         "max_hold": {
           "expectancy_units": 0.014188,
           "profit_factor": 2.443483,
-          "share": 0.00837,
+          "share": 0.00709,
           "total_pnl_units": 12.1308,
           "trades": 855,
           "winrate": 0.31462
         },
         "stop_loss": {
-          "expectancy_units": -0.156964,
+          "expectancy_units": -0.156815,
           "profit_factor": 0.0,
-          "share": 0.980685,
-          "total_pnl_units": -15724.23028,
-          "trades": 100177,
+          "share": 0.983639,
+          "total_pnl_units": -18600.71428,
+          "trades": 118616,
           "winrate": 0.0
         },
         "take_profit": {
           "expectancy_units": 77.598774,
           "profit_factor": Infinity,
-          "share": 0.010945,
+          "share": 0.009271,
           "total_pnl_units": 86755.42904,
           "trades": 1118,
           "winrate": 1.0
@@ -240,30 +240,30 @@
         "take_profit_x": 1.25
       },
       "summary": {
-        "avg_pnl_x": 1.869351,
+        "avg_pnl_x": 1.706603,
         "exit_reasons": {
           "max_hold": 855,
-          "stop_loss": 100177,
+          "stop_loss": 118616,
           "take_profit": 1118
         },
-        "expectancy_units": 0.69548,
-        "max_drawdown_units": -934.53948,
-        "profit_factor": 5.515667,
-        "total_pnl_units": 71043.32956,
-        "trades": 102150,
-        "winrate": 0.013578
+        "expectancy_units": 0.565282,
+        "max_drawdown_units": -1563.68748,
+        "profit_factor": 4.663088,
+        "total_pnl_units": 68166.84556,
+        "trades": 120589,
+        "winrate": 0.011502
       }
     },
     "graduation_watch": {
       "channel_performance": {
         "GMGN Featured Signals(Lv1) - SOL": {
-          "avg_pnl_x": 2.181161,
-          "expectancy_units": 0.708697,
-          "max_drawdown_units": -151.07091,
-          "profit_factor": 7.011778,
-          "total_pnl_units": 68265.19431,
-          "trades": 96325,
-          "winrate": 0.065507
+          "avg_pnl_x": 2.01192,
+          "expectancy_units": 0.607152,
+          "max_drawdown_units": -168.35211,
+          "profit_factor": 6.195564,
+          "total_pnl_units": 67275.48171,
+          "trades": 110805,
+          "winrate": 0.073498
         },
         "Twitter @pumpdotfun (alpha)": {
           "avg_pnl_x": 0.79,
@@ -275,47 +275,47 @@
           "winrate": 0.0
         },
         "WaveX Call - Multichain": {
-          "avg_pnl_x": 1.543065,
-          "expectancy_units": 0.325839,
+          "avg_pnl_x": 1.551544,
+          "expectancy_units": 0.330926,
           "max_drawdown_units": -0.378,
-          "profit_factor": 60.9914,
-          "total_pnl_units": 1791.4632,
-          "trades": 5498,
-          "winrate": 0.956893
+          "profit_factor": 75.446232,
+          "total_pnl_units": 3123.615,
+          "trades": 9439,
+          "winrate": 0.964721
         },
         "WhaleSignal Meme Coin": {
-          "avg_pnl_x": 5.527152,
-          "expectancy_units": 2.716291,
-          "max_drawdown_units": -1.1244,
-          "profit_factor": 27.348501,
-          "total_pnl_units": 89.6376,
-          "trades": 33,
-          "winrate": 0.181818
+          "avg_pnl_x": 0.888745,
+          "expectancy_units": -0.066753,
+          "max_drawdown_units": -3.4044,
+          "profit_factor": 0.385931,
+          "total_pnl_units": -3.4044,
+          "trades": 51,
+          "winrate": 0.137255
         }
       },
       "exit_reason_stats": {
         "max_hold": {
-          "expectancy_units": -0.083156,
-          "profit_factor": 0.257195,
-          "share": 0.985594,
-          "total_pnl_units": -8351.7762,
-          "trades": 100435,
-          "winrate": 0.106198
+          "expectancy_units": -0.067388,
+          "profit_factor": 0.376655,
+          "share": 0.98781,
+          "total_pnl_units": -8010.735,
+          "trades": 118875,
+          "winrate": 0.137514
         },
         "stop_loss": {
           "expectancy_units": -0.270853,
           "profit_factor": 0.0,
-          "share": 0.005466,
+          "share": 0.004628,
           "total_pnl_units": -150.86517,
           "trades": 557,
           "winrate": 0.0
         },
         "take_profit": {
-          "expectancy_units": 86.326031,
+          "expectancy_units": 86.320187,
           "profit_factor": Infinity,
-          "share": 0.00894,
-          "total_pnl_units": 78643.01448,
-          "trades": 911,
+          "share": 0.007562,
+          "total_pnl_units": 78551.37048,
+          "trades": 910,
           "winrate": 1.0
         }
       },
@@ -333,58 +333,58 @@
         "take_profit_x": 1.75
       },
       "summary": {
-        "avg_pnl_x": 2.147175,
+        "avg_pnl_x": 1.974857,
         "exit_reasons": {
-          "max_hold": 100435,
+          "max_hold": 118875,
           "stop_loss": 557,
-          "take_profit": 911
+          "take_profit": 910
         },
-        "expectancy_units": 0.688305,
-        "max_drawdown_units": -151.07091,
-        "profit_factor": 7.155673,
-        "total_pnl_units": 70140.37311,
-        "trades": 101903,
-        "winrate": 0.113608
+        "expectancy_units": 0.584914,
+        "max_drawdown_units": -168.35211,
+        "profit_factor": 6.413739,
+        "total_pnl_units": 70389.77031,
+        "trades": 120342,
+        "winrate": 0.1434
       }
     },
     "sniper": {
       "channel_performance": {
         "GMGN Featured Signals(Lv1) - SOL": {
-          "avg_pnl_x": 1.524095,
-          "expectancy_units": 0.393071,
+          "avg_pnl_x": 1.525748,
+          "expectancy_units": 0.394311,
           "max_drawdown_units": -0.1725,
-          "profit_factor": 1236.496696,
-          "total_pnl_units": 1065.6159,
-          "trades": 2711,
-          "winrate": 0.998156
+          "profit_factor": 1732.920435,
+          "total_pnl_units": 1792.53765,
+          "trades": 4546,
+          "winrate": 0.99868
         },
         "WaveX Call - Multichain": {
-          "avg_pnl_x": 1.55699,
-          "expectancy_units": 0.417742,
+          "avg_pnl_x": 1.559393,
+          "expectancy_units": 0.419545,
           "max_drawdown_units": 0.0,
           "profit_factor": Infinity,
-          "total_pnl_units": 2197.7415,
-          "trades": 5261,
+          "total_pnl_units": 3820.37625,
+          "trades": 9106,
           "winrate": 1.0
         },
         "WhaleSignal Meme Coin": {
-          "avg_pnl_x": 1.4452,
-          "expectancy_units": 0.3339,
+          "avg_pnl_x": 1.489429,
+          "expectancy_units": 0.367071,
           "max_drawdown_units": 0.0,
           "profit_factor": Infinity,
-          "total_pnl_units": 1.6695,
-          "trades": 5,
+          "total_pnl_units": 2.5695,
+          "trades": 7,
           "winrate": 1.0
         }
       },
       "exit_reason_stats": {
         "max_hold": {
-          "expectancy_units": 0.409305,
-          "profit_factor": 3786.538435,
+          "expectancy_units": 0.41112,
+          "profit_factor": 5426.587826,
           "share": 1.0,
-          "total_pnl_units": 3265.0269,
-          "trades": 7977,
-          "winrate": 0.999373
+          "total_pnl_units": 5615.4834,
+          "trades": 13659,
+          "winrate": 0.999561
         }
       },
       "profile": {
@@ -401,89 +401,89 @@
         "take_profit_x": 2.0
       },
       "summary": {
-        "avg_pnl_x": 1.54574,
+        "avg_pnl_x": 1.54816,
         "exit_reasons": {
-          "max_hold": 7977
+          "max_hold": 13659
         },
-        "expectancy_units": 0.409305,
+        "expectancy_units": 0.41112,
         "max_drawdown_units": -0.1725,
-        "profit_factor": 3786.538435,
-        "total_pnl_units": 3265.0269,
-        "trades": 7977,
-        "winrate": 0.999373
+        "profit_factor": 5426.587826,
+        "total_pnl_units": 5615.4834,
+        "trades": 13659,
+        "winrate": 0.999561
       }
     }
   },
   "ranking": [
     {
-      "avg_pnl_x": 2.195108,
+      "avg_pnl_x": 2.013835,
       "exit_reasons": {
-        "max_hold": 90642,
+        "max_hold": 103592,
         "stop_loss": 531,
-        "take_profit": 8644
+        "take_profit": 14133
       },
-      "expectancy_units": 1.195108,
-      "max_drawdown_units": -238.88185,
+      "expectancy_units": 1.013835,
+      "max_drawdown_units": -265.37325,
       "profile": "balanced",
-      "profit_factor": 7.591867,
-      "total_pnl_units": 119292.06935,
-      "trades": 99817,
-      "winrate": 0.095495
+      "profit_factor": 6.806291,
+      "total_pnl_units": 119892.09335,
+      "trades": 118256,
+      "winrate": 0.128636
     },
     {
-      "avg_pnl_x": 1.869351,
+      "avg_pnl_x": 1.974857,
+      "exit_reasons": {
+        "max_hold": 118875,
+        "stop_loss": 557,
+        "take_profit": 910
+      },
+      "expectancy_units": 0.584914,
+      "max_drawdown_units": -168.35211,
+      "profile": "graduation_watch",
+      "profit_factor": 6.413739,
+      "total_pnl_units": 70389.77031,
+      "trades": 120342,
+      "winrate": 0.1434
+    },
+    {
+      "avg_pnl_x": 1.706603,
       "exit_reasons": {
         "max_hold": 855,
-        "stop_loss": 100177,
+        "stop_loss": 118616,
         "take_profit": 1118
       },
-      "expectancy_units": 0.69548,
-      "max_drawdown_units": -934.53948,
+      "expectancy_units": 0.565282,
+      "max_drawdown_units": -1563.68748,
       "profile": "fast_exit",
-      "profit_factor": 5.515667,
-      "total_pnl_units": 71043.32956,
-      "trades": 102150,
-      "winrate": 0.013578
+      "profit_factor": 4.663088,
+      "total_pnl_units": 68166.84556,
+      "trades": 120589,
+      "winrate": 0.011502
     },
     {
-      "avg_pnl_x": 2.147175,
+      "avg_pnl_x": 1.54816,
       "exit_reasons": {
-        "max_hold": 100435,
-        "stop_loss": 557,
-        "take_profit": 911
+        "max_hold": 13659
       },
-      "expectancy_units": 0.688305,
-      "max_drawdown_units": -151.07091,
-      "profile": "graduation_watch",
-      "profit_factor": 7.155673,
-      "total_pnl_units": 70140.37311,
-      "trades": 101903,
-      "winrate": 0.113608
-    },
-    {
-      "avg_pnl_x": 1.54574,
-      "exit_reasons": {
-        "max_hold": 7977
-      },
-      "expectancy_units": 0.409305,
+      "expectancy_units": 0.41112,
       "max_drawdown_units": -0.1725,
       "profile": "sniper",
-      "profit_factor": 3786.538435,
-      "total_pnl_units": 3265.0269,
-      "trades": 7977,
-      "winrate": 0.999373
+      "profit_factor": 5426.587826,
+      "total_pnl_units": 5615.4834,
+      "trades": 13659,
+      "winrate": 0.999561
     },
     {
       "avg_pnl_x": 0.81,
       "exit_reasons": {
-        "stop_loss": 7959
+        "stop_loss": 13641
       },
       "expectancy_units": -0.095,
-      "max_drawdown_units": -756.105,
+      "max_drawdown_units": -1295.895,
       "profile": "conservative",
       "profit_factor": 0.0,
-      "total_pnl_units": -756.105,
-      "trades": 7959,
+      "total_pnl_units": -1295.895,
+      "trades": 13641,
       "winrate": 0.0
     }
   ]

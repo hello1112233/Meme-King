@@ -2,11 +2,11 @@
   "GMGN Featured Signals(Lv1) - SOL": {
     "best_max_x": 397.1151,
     "median_confidence": 1.0,
-    "median_max_x": 4.399,
-    "records": 101703,
-    "replayable": 96954,
-    "unique_tokens": 5494,
-    "winrate_at_1_5x": 0.9679144385026738
+    "median_max_x": 4.2146,
+    "records": 117894,
+    "replayable": 111433,
+    "unique_tokens": 6221,
+    "winrate_at_1_5x": 0.9689119170984456
   },
   "Twitter @pumpdotfun (alpha)": {
     "best_max_x": 500.0,
@@ -20,19 +20,19 @@
   "WaveX Call - Multichain": {
     "best_max_x": 332.4984,
     "median_confidence": 1.0,
-    "median_max_x": 1.4207,
-    "records": 6281,
-    "replayable": 5500,
-    "unique_tokens": 3464,
-    "winrate_at_1_5x": 0.4517766497461929
+    "median_max_x": 1.4601,
+    "records": 10400,
+    "replayable": 9444,
+    "unique_tokens": 5836,
+    "winrate_at_1_5x": 0.4782608695652174
   },
   "WhaleSignal Meme Coin": {
     "best_max_x": 86.851,
-    "median_confidence": 0.88,
-    "median_max_x": 59.6762,
-    "records": 79,
-    "replayable": 35,
-    "unique_tokens": 16,
+    "median_confidence": 0.8835,
+    "median_max_x": 53.5666,
+    "records": 113,
+    "replayable": 54,
+    "unique_tokens": 26,
     "winrate_at_1_5x": 1.0
   }
 }

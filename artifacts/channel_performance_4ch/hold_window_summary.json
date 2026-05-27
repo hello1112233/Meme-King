@@ -1,0 +1,374 @@
+{
+  "overall": {
+    "15m": {
+      "alerts": 120965,
+      "average_gain_pct": 116.341754,
+      "average_gain_x": 2.163418,
+      "hold_window": "15m",
+      "median_gain_pct": 0.0,
+      "seconds": 900,
+      "win_rate_25_pct": 0.116844
+    },
+    "1h": {
+      "alerts": 120965,
+      "average_gain_pct": 116.44971,
+      "average_gain_x": 2.164497,
+      "hold_window": "1h",
+      "median_gain_pct": 0.0,
+      "seconds": 3600,
+      "win_rate_25_pct": 0.11934
+    },
+    "1m": {
+      "alerts": 120965,
+      "average_gain_pct": 3.731488,
+      "average_gain_x": 1.037315,
+      "hold_window": "1m",
+      "median_gain_pct": 0.0,
+      "seconds": 60,
+      "win_rate_25_pct": 0.116844
+    },
+    "24h": {
+      "alerts": 120965,
+      "average_gain_pct": 116.611645,
+      "average_gain_x": 2.166116,
+      "hold_window": "24h",
+      "median_gain_pct": 0.0,
+      "seconds": 86400,
+      "win_rate_25_pct": 0.12354
+    },
+    "2h": {
+      "alerts": 120965,
+      "average_gain_pct": 116.503688,
+      "average_gain_x": 2.165037,
+      "hold_window": "2h",
+      "median_gain_pct": 0.0,
+      "seconds": 7200,
+      "win_rate_25_pct": 0.12292
+    },
+    "30m": {
+      "alerts": 120965,
+      "average_gain_pct": 116.395732,
+      "average_gain_x": 2.163957,
+      "hold_window": "30m",
+      "median_gain_pct": 0.0,
+      "seconds": 1800,
+      "win_rate_25_pct": 0.116844
+    },
+    "5m": {
+      "alerts": 120965,
+      "average_gain_pct": 116.287775,
+      "average_gain_x": 2.162878,
+      "hold_window": "5m",
+      "median_gain_pct": 0.0,
+      "seconds": 300,
+      "win_rate_25_pct": 0.116844
+    },
+    "6h": {
+      "alerts": 120965,
+      "average_gain_pct": 116.557667,
+      "average_gain_x": 2.165577,
+      "hold_window": "6h",
+      "median_gain_pct": 0.0,
+      "seconds": 21600,
+      "win_rate_25_pct": 0.123275
+    }
+  },
+  "per_channel": {
+    "GMGN Featured Signals(Lv1) - SOL": {
+      "15m": {
+        "alerts": 111422,
+        "average_gain_pct": 121.370153,
+        "average_gain_x": 2.213702,
+        "hold_window": "15m",
+        "median_gain_pct": 0.0,
+        "seconds": 900,
+        "win_rate_25_pct": 0.048455
+      },
+      "1h": {
+        "alerts": 111422,
+        "average_gain_pct": 121.453825,
+        "average_gain_x": 2.214538,
+        "hold_window": "1h",
+        "median_gain_pct": 0.0,
+        "seconds": 3600,
+        "win_rate_25_pct": 0.050062
+      },
+      "1m": {
+        "alerts": 111422,
+        "average_gain_pct": 1.609139,
+        "average_gain_x": 1.016091,
+        "hold_window": "1m",
+        "median_gain_pct": 0.0,
+        "seconds": 60,
+        "win_rate_25_pct": 0.048455
+      },
+      "24h": {
+        "alerts": 111422,
+        "average_gain_pct": 121.579333,
+        "average_gain_x": 2.215793,
+        "hold_window": "24h",
+        "median_gain_pct": 0.0,
+        "seconds": 86400,
+        "win_rate_25_pct": 0.052324
+      },
+      "2h": {
+        "alerts": 111422,
+        "average_gain_pct": 121.495661,
+        "average_gain_x": 2.214957,
+        "hold_window": "2h",
+        "median_gain_pct": 0.0,
+        "seconds": 7200,
+        "win_rate_25_pct": 0.051686
+      },
+      "30m": {
+        "alerts": 111422,
+        "average_gain_pct": 121.411989,
+        "average_gain_x": 2.21412,
+        "hold_window": "30m",
+        "median_gain_pct": 0.0,
+        "seconds": 1800,
+        "win_rate_25_pct": 0.048455
+      },
+      "5m": {
+        "alerts": 111422,
+        "average_gain_pct": 121.328317,
+        "average_gain_x": 2.213283,
+        "hold_window": "5m",
+        "median_gain_pct": 0.0,
+        "seconds": 300,
+        "win_rate_25_pct": 0.048455
+      },
+      "6h": {
+        "alerts": 111422,
+        "average_gain_pct": 121.537497,
+        "average_gain_x": 2.215375,
+        "hold_window": "6h",
+        "median_gain_pct": 0.0,
+        "seconds": 21600,
+        "win_rate_25_pct": 0.052054
+      }
+    },
+    "Twitter @pumpdotfun (alpha)": {
+      "15m": {
+        "alerts": 47,
+        "average_gain_pct": 0.0,
+        "average_gain_x": 1.0,
+        "hold_window": "15m",
+        "median_gain_pct": 0.0,
+        "seconds": 900,
+        "win_rate_25_pct": 0.0
+      },
+      "1h": {
+        "alerts": 47,
+        "average_gain_pct": 0.0,
+        "average_gain_x": 1.0,
+        "hold_window": "1h",
+        "median_gain_pct": 0.0,
+        "seconds": 3600,
+        "win_rate_25_pct": 0.0
+      },
+      "1m": {
+        "alerts": 47,
+        "average_gain_pct": 0.0,
+        "average_gain_x": 1.0,
+        "hold_window": "1m",
+        "median_gain_pct": 0.0,
+        "seconds": 60,
+        "win_rate_25_pct": 0.0
+      },
+      "24h": {
+        "alerts": 47,
+        "average_gain_pct": 0.0,
+        "average_gain_x": 1.0,
+        "hold_window": "24h",
+        "median_gain_pct": 0.0,
+        "seconds": 86400,
+        "win_rate_25_pct": 0.0
+      },
+      "2h": {
+        "alerts": 47,
+        "average_gain_pct": 0.0,
+        "average_gain_x": 1.0,
+        "hold_window": "2h",
+        "median_gain_pct": 0.0,
+        "seconds": 7200,
+        "win_rate_25_pct": 0.0
+      },
+      "30m": {
+        "alerts": 47,
+        "average_gain_pct": 0.0,
+        "average_gain_x": 1.0,
+        "hold_window": "30m",
+        "median_gain_pct": 0.0,
+        "seconds": 1800,
+        "win_rate_25_pct": 0.0
+      },
+      "5m": {
+        "alerts": 47,
+        "average_gain_pct": 0.0,
+        "average_gain_x": 1.0,
+        "hold_window": "5m",
+        "median_gain_pct": 0.0,
+        "seconds": 300,
+        "win_rate_25_pct": 0.0
+      },
+      "6h": {
+        "alerts": 47,
+        "average_gain_pct": 0.0,
+        "average_gain_x": 1.0,
+        "hold_window": "6h",
+        "median_gain_pct": 0.0,
+        "seconds": 21600,
+        "win_rate_25_pct": 0.0
+      }
+    },
+    "WaveX Call - Multichain": {
+      "15m": {
+        "alerts": 9444,
+        "average_gain_pct": 57.772267,
+        "average_gain_x": 1.577723,
+        "hold_window": "15m",
+        "median_gain_pct": 65.0,
+        "seconds": 900,
+        "win_rate_25_pct": 0.924291
+      },
+      "1h": {
+        "alerts": 9444,
+        "average_gain_pct": 58.166477,
+        "average_gain_x": 1.581665,
+        "hold_window": "1h",
+        "median_gain_pct": 65.0,
+        "seconds": 3600,
+        "win_rate_25_pct": 0.937315
+      },
+      "1m": {
+        "alerts": 9444,
+        "average_gain_pct": 28.787581,
+        "average_gain_x": 1.287876,
+        "hold_window": "1m",
+        "median_gain_pct": 32.5,
+        "seconds": 60,
+        "win_rate_25_pct": 0.924291
+      },
+      "24h": {
+        "alerts": 9444,
+        "average_gain_pct": 58.757793,
+        "average_gain_x": 1.587578,
+        "hold_window": "24h",
+        "median_gain_pct": 65.0,
+        "seconds": 86400,
+        "win_rate_25_pct": 0.96421
+      },
+      "2h": {
+        "alerts": 9444,
+        "average_gain_pct": 58.363583,
+        "average_gain_x": 1.583636,
+        "hold_window": "2h",
+        "median_gain_pct": 65.0,
+        "seconds": 7200,
+        "win_rate_25_pct": 0.963998
+      },
+      "30m": {
+        "alerts": 9444,
+        "average_gain_pct": 57.969372,
+        "average_gain_x": 1.579694,
+        "hold_window": "30m",
+        "median_gain_pct": 65.0,
+        "seconds": 1800,
+        "win_rate_25_pct": 0.924291
+      },
+      "5m": {
+        "alerts": 9444,
+        "average_gain_pct": 57.575161,
+        "average_gain_x": 1.575752,
+        "hold_window": "5m",
+        "median_gain_pct": 65.0,
+        "seconds": 300,
+        "win_rate_25_pct": 0.924291
+      },
+      "6h": {
+        "alerts": 9444,
+        "average_gain_pct": 58.560688,
+        "average_gain_x": 1.585607,
+        "hold_window": "6h",
+        "median_gain_pct": 65.0,
+        "seconds": 21600,
+        "win_rate_25_pct": 0.96421
+      }
+    },
+    "WhaleSignal Meme Coin": {
+      "15m": {
+        "alerts": 52,
+        "average_gain_pct": 84.110096,
+        "average_gain_x": 1.841101,
+        "hold_window": "15m",
+        "median_gain_pct": 0.0,
+        "seconds": 900,
+        "win_rate_25_pct": 0.115385
+      },
+      "1h": {
+        "alerts": 52,
+        "average_gain_pct": 84.362981,
+        "average_gain_x": 1.84363,
+        "hold_window": "1h",
+        "median_gain_pct": 0.0,
+        "seconds": 3600,
+        "win_rate_25_pct": 0.115385
+      },
+      "1m": {
+        "alerts": 52,
+        "average_gain_pct": 4.155288,
+        "average_gain_x": 1.041553,
+        "hold_window": "1m",
+        "median_gain_pct": 0.0,
+        "seconds": 60,
+        "win_rate_25_pct": 0.115385
+      },
+      "24h": {
+        "alerts": 52,
+        "average_gain_pct": 84.742308,
+        "average_gain_x": 1.847423,
+        "hold_window": "24h",
+        "median_gain_pct": 0.0,
+        "seconds": 86400,
+        "win_rate_25_pct": 0.153846
+      },
+      "2h": {
+        "alerts": 52,
+        "average_gain_pct": 84.489423,
+        "average_gain_x": 1.844894,
+        "hold_window": "2h",
+        "median_gain_pct": 0.0,
+        "seconds": 7200,
+        "win_rate_25_pct": 0.115385
+      },
+      "30m": {
+        "alerts": 52,
+        "average_gain_pct": 84.236538,
+        "average_gain_x": 1.842365,
+        "hold_window": "30m",
+        "median_gain_pct": 0.0,
+        "seconds": 1800,
+        "win_rate_25_pct": 0.115385
+      },
+      "5m": {
+        "alerts": 52,
+        "average_gain_pct": 83.983654,
+        "average_gain_x": 1.839837,
+        "hold_window": "5m",
+        "median_gain_pct": 0.0,
+        "seconds": 300,
+        "win_rate_25_pct": 0.115385
+      },
+      "6h": {
+        "alerts": 52,
+        "average_gain_pct": 84.615865,
+        "average_gain_x": 1.846159,
+        "hold_window": "6h",
+        "median_gain_pct": 0.0,
+        "seconds": 21600,
+        "win_rate_25_pct": 0.115385
+      }
+    }
+  }
+}

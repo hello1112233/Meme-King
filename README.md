@@ -54,6 +54,14 @@ bash scripts/evaluate_paper_trading.sh
 
 The paper dashboard is written to `artifacts/paper_trading/index.html`.
 
+## Four-Channel Historical Performance
+
+```bash
+bash scripts/analyze_4_channel_performance.sh
+```
+
+This analyzes historical alerts from the four allowlisted channels and writes a read-only performance dashboard to `artifacts/channel_performance_4ch/index.html`. It reports per-channel win rate, max gain, X gain, time to max, best hold windows, quick-flip ranking, longer-hold ranking, and data quality warnings. Rows are marked as `real_historical` when local price history is available, or `paper_simulated` when deterministic paper replay fields are used instead.
+
 Run the paper-only execution gate:
 
 ```bash
@@ -123,6 +131,9 @@ artifacts/index.html
 - `artifacts/paper_trading/evaluation_summary.json`
 - `artifacts/paper_trading/strategy_comparison.json`
 - `artifacts/paper_trading/index.html`
+- `artifacts/channel_performance_4ch/channel_summary.json`
+- `artifacts/channel_performance_4ch/hold_window_summary.json`
+- `artifacts/channel_performance_4ch/index.html`
 - `artifacts/execution_gate/gate_summary.json`
 - `artifacts/execution_gate/index.html`
 - `artifacts/hermes_trade_skill/skill_rules.json`

@@ -11,6 +11,7 @@ fi
 bash scripts/run_meme_king.sh
 bash scripts/run_paper_trading.sh
 bash scripts/evaluate_paper_trading.sh
+bash scripts/analyze_4_channel_performance.sh
 bash scripts/run_execution_gate.sh
 bash scripts/train_hermes_trade_skill.sh
 bash scripts/validate_hermes_trade_skill_oos.sh

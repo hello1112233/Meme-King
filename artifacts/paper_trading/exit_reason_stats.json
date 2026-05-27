@@ -1,26 +1,26 @@
 {
   "max_hold": {
-    "expectancy_units": -0.167677,
-    "profit_factor": 0.027947,
-    "share": 0.910507,
-    "total_pnl_units": -15652.149,
-    "trades": 93347,
-    "winrate": 0.03352
+    "expectancy_units": -0.168175,
+    "profit_factor": 0.02839,
+    "share": 0.878767,
+    "total_pnl_units": -17876.964,
+    "trades": 106300,
+    "winrate": 0.031232
   },
   "stop_loss": {
     "expectancy_units": -0.456591,
     "profit_factor": 0.0,
-    "share": 0.005179,
+    "share": 0.00439,
     "total_pnl_units": -242.44965,
     "trades": 531,
     "winrate": 0.0
   },
   "take_profit": {
-    "expectancy_units": 15.884261,
+    "expectancy_units": 9.943181,
     "profit_factor": Infinity,
-    "share": 0.084314,
-    "total_pnl_units": 137303.5487,
-    "trades": 8644,
+    "share": 0.116844,
+    "total_pnl_units": 140536.9177,
+    "trades": 14134,
     "winrate": 1.0
   }
 }

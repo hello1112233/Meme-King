@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-05-25T23:17:41Z",
+  "created_at": "2026-05-27T04:33:53Z",
   "extensions": [
     ".csv",
     ".db",
@@ -21,7 +21,7 @@
   "sources": [
     {
       "kind": "db",
-      "matched_records": 3753,
+      "matched_records": 3760,
       "path": "/Users/macbook/openclaw/data/agent_training.db",
       "relative_path": "data/agent_training.db",
       "sample_matches": [
@@ -31,25 +31,25 @@
         "agent_alerts:GMGN Featured Signals(Lv1) - SOL",
         "agent_alerts:GMGN Featured Signals(Lv1) - SOL"
       ],
-      "size_bytes": 220381184
+      "size_bytes": 250920960
     },
     {
       "kind": "json",
-      "matched_records": 50,
+      "matched_records": 60,
       "path": "/Users/macbook/openclaw/data/channel_intelligence.json",
       "relative_path": "data/channel_intelligence.json",
       "sample_matches": [
         "GMGN Featured Signals(Lv1) - SOL",
         "WaveX Call - Multichain",
-        "GMGN Featured Signals(Lv1) - SOL",
+        "WaveX Call - Multichain",
         "GMGN Featured Signals(Lv1) - SOL",
         "WaveX Call - Multichain"
       ],
-      "size_bytes": 41714
+      "size_bytes": 42789
     },
     {
       "kind": "json",
-      "matched_records": 188,
+      "matched_records": 187,
       "path": "/Users/macbook/openclaw/data/entry_coach_log.json",
       "relative_path": "data/entry_coach_log.json",
       "sample_matches": [
@@ -59,7 +59,7 @@
         "GMGN Featured Signals(Lv1) - SOL",
         "GMGN Featured Signals(Lv1) - SOL"
       ],
-      "size_bytes": 103896
+      "size_bytes": 104241
     },
     {
       "kind": "csv",
@@ -213,17 +213,15 @@
     },
     {
       "kind": "json",
-      "matched_records": 11,
+      "matched_records": 3,
       "path": "/Users/macbook/openclaw/data/hermes_deep_audit.json",
       "relative_path": "data/hermes_deep_audit.json",
       "sample_matches": [
         "WhaleSignal Meme Coin",
         "WhaleSignal Meme Coin",
-        "WaveX Call - Multichain",
-        "WaveX Call - Multichain",
         "WhaleSignal Meme Coin"
       ],
-      "size_bytes": 10002
+      "size_bytes": 11675
     },
     {
       "kind": "json",
@@ -245,7 +243,7 @@
         "GMGN Featured Signals(Lv1) - SOL",
         "GMGN Featured Signals(Lv1) - SOL"
       ],
-      "size_bytes": 173146
+      "size_bytes": 174342
     },
     {
       "kind": "json",
@@ -274,17 +272,14 @@
     },
     {
       "kind": "json",
-      "matched_records": 5,
+      "matched_records": 2,
       "path": "/Users/macbook/openclaw/data/hermes_trade_examples.json",
       "relative_path": "data/hermes_trade_examples.json",
       "sample_matches": [
         "GMGN Featured Signals(Lv1) - SOL",
-        "GMGN Featured Signals(Lv1) - SOL",
-        "GMGN Featured Signals(Lv1) - SOL",
-        "GMGN Featured Signals(Lv1) - SOL",
         "GMGN Featured Signals(Lv1) - SOL"
       ],
-      "size_bytes": 3186
+      "size_bytes": 3223
     },
     {
       "kind": "jsonl",
@@ -302,17 +297,17 @@
     },
     {
       "kind": "json",
-      "matched_records": 10,
+      "matched_records": 15,
       "path": "/Users/macbook/openclaw/data/kg_insights.json",
       "relative_path": "data/kg_insights.json",
       "sample_matches": [
-        "WaveX Call - Multichain",
-        "WaveX Call - Multichain",
-        "WaveX Call - Multichain",
-        "WaveX Call - Multichain",
-        "GMGN Featured Signals(Lv1) - SOL"
+        "WhaleSignal Meme Coin",
+        "WhaleSignal Meme Coin",
+        "WhaleSignal Meme Coin",
+        "WhaleSignal Meme Coin",
+        "WaveX Call - Multichain"
       ],
-      "size_bytes": 7948
+      "size_bytes": 9582
     },
     {
       "kind": "db",
@@ -324,7 +319,7 @@
     },
     {
       "kind": "db",
-      "matched_records": 13484,
+      "matched_records": 14350,
       "path": "/Users/macbook/openclaw/data/openclaw.db",
       "relative_path": "data/openclaw.db",
       "sample_matches": [
@@ -334,11 +329,11 @@
         "alert_retrospective:GMGN Featured Signals(Lv1) - SOL",
         "alert_retrospective:GMGN Featured Signals(Lv1) - SOL"
       ],
-      "size_bytes": 86339584
+      "size_bytes": 147812352
     },
     {
       "kind": "json",
-      "matched_records": 26,
+      "matched_records": 36,
       "path": "/Users/macbook/openclaw/data/pattern_discovery.json",
       "relative_path": "data/pattern_discovery.json",
       "sample_matches": [
@@ -348,24 +343,11 @@
         "GMGN Featured Signals(Lv1) - SOL",
         "GMGN Featured Signals(Lv1) - SOL"
       ],
-      "size_bytes": 35706
+      "size_bytes": 42262
     },
     {
       "kind": "json",
-      "matched_records": 4,
-      "path": "/Users/macbook/openclaw/data/quick_strategy.json",
-      "relative_path": "data/quick_strategy.json",
-      "sample_matches": [
-        "GMGN Featured Signals(Lv1) - SOL",
-        "GMGN Featured Signals(Lv1) - SOL",
-        "GMGN Featured Signals(Lv1) - SOL",
-        "GMGN Featured Signals(Lv1) - SOL"
-      ],
-      "size_bytes": 3041
-    },
-    {
-      "kind": "json",
-      "matched_records": 124,
+      "matched_records": 106,
       "path": "/Users/macbook/openclaw/data/quick_strategy_log.json",
       "relative_path": "data/quick_strategy_log.json",
       "sample_matches": [
@@ -375,7 +357,7 @@
         "GMGN Featured Signals(Lv1) - SOL",
         "GMGN Featured Signals(Lv1) - SOL"
       ],
-      "size_bytes": 122386
+      "size_bytes": 123712
     },
     {
       "kind": "json",
@@ -458,8 +440,28 @@
       "size_bytes": 9045
     },
     {
+      "kind": "json",
+      "matched_records": 1,
+      "path": "/Users/macbook/openclaw/data/shadow_report_shadow_1779730687.json",
+      "relative_path": "data/shadow_report_shadow_1779730687.json",
+      "sample_matches": [
+        "GMGN Featured Signals(Lv1) - SOL"
+      ],
+      "size_bytes": 7914
+    },
+    {
+      "kind": "json",
+      "matched_records": 1,
+      "path": "/Users/macbook/openclaw/data/shadow_report_shadow_1779773898.json",
+      "relative_path": "data/shadow_report_shadow_1779773898.json",
+      "sample_matches": [
+        "GMGN Featured Signals(Lv1) - SOL"
+      ],
+      "size_bytes": 8127
+    },
+    {
       "kind": "db",
-      "matched_records": 52,
+      "matched_records": 54,
       "path": "/Users/macbook/openclaw/data/shadow_trading.db",
       "relative_path": "data/shadow_trading.db",
       "sample_matches": [
@@ -469,21 +471,35 @@
         "shadow_sessions:GMGN Featured Signals(Lv1) - SOL",
         "shadow_sessions:GMGN Featured Signals(Lv1) - SOL"
       ],
-      "size_bytes": 12054528
+      "size_bytes": 13594624
     },
     {
       "kind": "json",
       "matched_records": 8,
+      "path": "/Users/macbook/openclaw/data/strategy_discovery.json",
+      "relative_path": "data/strategy_discovery.json",
+      "sample_matches": [
+        "WhaleSignal Meme Coin",
+        "WhaleSignal Meme Coin",
+        "GMGN Featured Signals(Lv1) - SOL",
+        "WhaleSignal Meme Coin",
+        "WhaleSignal Meme Coin"
+      ],
+      "size_bytes": 12576
+    },
+    {
+      "kind": "json",
+      "matched_records": 12,
       "path": "/Users/macbook/openclaw/data/strategy_policy.json",
       "relative_path": "data/strategy_policy.json",
       "sample_matches": [
         "WaveX Call - Multichain",
         "WaveX Call - Multichain",
-        "WaveX Call - Multichain",
-        "WaveX Call - Multichain",
-        "WaveX Call - Multichain"
+        "GMGN Featured Signals(Lv1) - SOL",
+        "WhaleSignal Meme Coin",
+        "WhaleSignal Meme Coin"
       ],
-      "size_bytes": 12847
+      "size_bytes": 13352
     },
     {
       "kind": "db",

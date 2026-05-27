@@ -1,0 +1,19 @@
+{
+  "analyzed_alerts": 120965,
+  "price_sources": {
+    "paper_simulated": 120965
+  },
+  "real_market_price_points_indexed": 0,
+  "selected_channel_alerts": 128458,
+  "selected_channels": [
+    "WhaleSignal Meme Coin",
+    "WaveX Call - Multichain",
+    "Twitter @pumpdotfun (alpha)",
+    "GMGN Featured Signals(Lv1) - SOL"
+  ],
+  "skipped_missing_token_or_mint": 7493,
+  "warnings": [
+    "No complete true historical price window data was found for at least some alerts; paper_simulated replay fields were used.",
+    "Some selected-channel alerts were skipped because they had no token symbol or mint address."
+  ]
+}
